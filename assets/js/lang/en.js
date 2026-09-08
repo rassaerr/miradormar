@@ -7,6 +7,7 @@ window.translations.en = {
   nav_keys: "Technical Room Keys",
   nav_electricity: "Electricity",
   nav_water: "Water",
+  nav_internet: "Internet",
   nav_maintenance: "Maintenance",
   nav_contacts: "Contacts",
   nav_about: "About",
@@ -19,6 +20,7 @@ window.translations.en = {
   card_keys_desc: "Overview of keys and technical room access.",
   card_electricity_desc: "Meters, breakers, and infrastructure details.",
   card_water_desc: "Details about supply, main valves, and emergency procedures.",
+  card_internet_desc: "Details about network infrastructure, fiber and router.",
   card_maintenance_desc: "General upkeep and cleaning schedule information.",
   card_contacts_desc: "Contact details for management and emergencies.",
   card_about_desc: "General portal information for building owners.",
@@ -30,7 +32,7 @@ window.translations.en = {
   documents_title: "Building Rules & Proposals",
   documents_text: "Draft regulations ready for review and discussion at the upcoming owners' meeting.",
   doc_en: "Common Area Rules – Residence (EN)",
-  doc_es: "Reglamento de zonas comunes – Residencia (ES)",
+  doc_es: "Reglamento de zonas communes – Residencia (ES)",
   doc_fr: "Règlement des parties communes – Résidence (FR)",
   doc_nl: "Reglement gemeenschappelijke delen – Residentie (NL)",
 
@@ -67,6 +69,13 @@ window.translations.en = {
   water_valve: "Main shut-off valve: Inside the water room",
   water_pressure: "Pressure system: Next to the meter cluster",
 
+  internet_title: "Internet & Telecom",
+  internet_text: "Information about internet infrastructure, fiber connections, routers, and provider details.",
+  internet_loc: "Main telecom room: First floor service corridor",
+  internet_provider: "Provider: Movistar",
+  internet_speed: "Connection type: Fiber Optic (FTTH)",
+  internet_support: "Technical support: Managed by the community operator",
+
   maintenance_title: "Maintenance",
   maintenance_text: "General maintenance information for Mirador del Mar.",
   maintenance_loc: "Maintenance room: Parking level",
@@ -79,5 +88,5 @@ window.translations.en = {
   contacts_emergency: "Emergency: +34 123 456 789",
 
   about_title: "About Mirador del Mar",
-  about_text: "This portal centralizes all building-related information for the owners of Mirador del Mar in Palomares."
+  about_text: "General portal information for building owners."
 };
