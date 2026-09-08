@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<!-- Voorkom dat browsers de pagina automatisch forceren naar een andere taal -->
+<!DOCTYPE html><!-- Voorkom dat browsers de pagina automatisch forceren naar een andere taal -->
 <html lang="en" class="notranslate">
 <head>
   <meta charset="UTF-8" />
@@ -54,12 +53,95 @@
     <section id="water">
       <h2 data-i18n="water_title">Water</h2>
       <p data-i18n="water_text">Details about water supply, main valves, meters, and emergency procedures.</p>
-      <ul>
-        <li data-i18n="water_loc">Main water room: Basement level</li>
-        <li data-i18n="water_provider">Provider: Galasa</li>
-        <li data-i18n="water_valve">Main shut-off valve: Inside the water room</li>
-        <li data-i18n="water_pressure">Pressure system: Next to the meter cluster</li>
-      </ul>
+
+      <!-- Provider & Algemene specificaties -->
+      <div class="tech-card">
+        <h3 data-i18n="water_provider_title">Provider Details</h3>
+        <ul class="notranslate">
+          <li><strong>Company:</strong> GALASA (Gestión de Aguas del Levante Almeriense SA)</li>
+          <li><strong>Local Office:</strong> Calle del Mar, 2, 04620 Vera (Almería)</li>
+          <li><strong>Phone (Emergency / Support):</strong> +34 902 44 42 54 / +34 950 39 31 11</li>
+          <li><strong>Official Website:</strong> <a href="https://galasa.es" target="_blank">www.galasa.es</a></li>
+        </ul>
+        <hr>
+        <ul>
+          <li data-i18n="water_loc"><strong>Main water room:</strong> Basement level</li>
+          <li data-i18n="water_valve"><strong>Main shut-off valve:</strong> Inside the water room</li>
+          <li data-i18n="water_meters_count"><strong>Water Meters:</strong> 13 personal meters in total (1 for each apartment, 1 for the common area)</li>
+          <li data-i18n="water_pressure"><strong>Pressure system:</strong> Next to the meter cluster</li>
+        </ul>
+      </div>
+
+      <!-- Noodhandleiding voor Lekkages -->
+      <div class="technician-guide">
+        <h3 data-i18n="water_emergency_title">Emergency Procedure: In Case of a Water Leak</h3>
+        <p data-i18n="water_emergency_intro">If you detect or suspect a water leak, immediately follow these instructions based on the location:</p>
+        
+        <h4 data-i18n="water_leak_inside_title">A) Leak INSIDE the Building Infrastructure</h4>
+        <p data-i18n="water_leak_inside_text">In case of an internal building leak, the main water supply must be shut down immediately:</p>
+        <ol>
+          <li>
+            <span data-i18n="water_step_1">Go to the main water cabinet located at the entrance of the underground garage, on the left side.</span>
+          </li>
+          <li>
+            <span data-i18n="water_step_2">The cabinet is locked. For rapid emergency response, the key can be accessed immediately via the key safe using the master access code.</span>
+          </li>
+          <li>
+            <span data-i18n="water_step_3">Once open, locate and completely close the main blue shut-off valve inside the cabinet to stop the primary water flow. (See reference photos below from the major 2025 leak event).</span>
+          </li>
+        </ol>
+
+        <h4 data-i18n="water_leak_outside_title">B) Leak OUTSIDE the Building</h4>
+        <p data-i18n="water_leak_outside_text">If a water leak is observed on the street, sidewalk, or main supply line outside the building perimeter:</p>
+        <ul>
+          <li>
+            <span data-i18n="water_step_outside">Do not attempt to operate internal valves. Immediately report the issue to the Galasa emergency line at +34 950 39 31 11 and alert the building management.</span>
+          </li>
+        </ul>
+
+        <!-- Handleiding voor Wateronderbrekingen (Water Shutoffs) -->
+        <h4 data-i18n="water_shutdown_title">C) Procedure in Case of a Main Water Shutdown (Water Cuts)</h4>
+        <p data-i18n="water_shutdown_intro">Due to the ageing main water supply infrastructure in Palomares, temporary water shutdowns occur frequently. Outages can last anywhere from 1 to 12 hours. In most cases, you simply have to wait for the supply to be restored.</p>
+        
+        <div class="alert-box">
+          <p><strong><span data-i18n="water_critical_warning">CRITICAL WARNING FOR ELECTRIC BOILERS (WATER HEATERS):</span></strong></p>
+          <ul>
+            <li>
+              <span data-i18n="water_boiler_risk"><strong>Never draw hot water during a shutdown:</strong> Using hot water while the main supply is cut off can drain your electric boiler. This can lead to dry-firing and critical overheating of the internal elements.</span>
+            </li>
+            <li>
+              <span data-i18n="water_boiler_preventive"><strong>Preemptive Action:</strong> To eliminate all risks, it is highly recommended to completely <strong>unplug or isolate the boiler</strong> from the power grid as soon as you notice a water cut.</span>
+            </li>
+            <li>
+              <span data-i18n="water_boiler_reset"><strong>Boiler stopped working? Do not replace it yet:</strong> If the boiler fails to heat up after water is restored but shows no physical leaks, <strong>never agree to have the entire unit replaced straight away</strong>. In most cases, the thermal safety switch has tripped. There is a red safety reset button located behind the bottom cover plate.</span>
+            </li>
+            <li>
+              <span data-i18n="water_boiler_danger"><strong>DANGER - 230V Electrical Hazard:</strong> The reset button is located next to live electrical terminals. <strong>Never attempt to open this cover yourself</strong>. Ensure a qualified person or certified electrician handles this. In case of issues, contact a professional plumber.</span>
+            </li>
+            <li>
+              <span data-i18n="water_announcements"><strong>Official Announcements:</strong> Planned service disruptions and emergency repairs are published directly by Galasa on their website under</span> <a href="https://galasa.es" target="_blank" class="notranslate">www.galasa.es</a>.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="photo-gallery">
+        <h3 data-i18n="water_gallery_title">Incident Reference Photos (2025 Main Leak)</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="img/water_cabinet_entrance_left_14_meters.jpeg" alt="Water Cabinet Entrance Location" />
+            <p><strong data-i18n="water_photo_lbl_1">Photo 1:</strong> <span data-i18n="water_photo_1">Main Water Cabinet Location (Entrance of Underground Garage, Left Side)</span></p>
+          </div>
+          <div class="gallery-item">
+            <img src="img/water_main_valve_incabinet_at_entrance.jpeg" alt="Water Main Cabinet Opened" />
+            <p><strong data-i18n="water_photo_lbl_2">Photo 2:</strong> <span data-i18n="water_photo_2">Inside the Cabinet at the Entrance - Primary Valve System</span></p>
+          </div>
+          <div class="gallery-item">
+            <img src="img/waterleak_main_shutoff_valve.jpeg" alt="Main Blue Valve Shutoff" />
+            <p><strong data-i18n="water_photo_lbl_3">Photo 3:</strong> <span data-i18n="water_photo_3">The Main Blue Valve That Needs to be Closed in Case of an Emergency Leak</span></p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
   <footer><p>&copy; Mirador del Mar – Owners Portal</p></footer>
