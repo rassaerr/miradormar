@@ -13,7 +13,7 @@ window.translations.fr = {
   nav_about: "À propos",
 
   welcome_title: "Portail d'Information du Bâtiment",
-  welcome_sub: "Sélectionnez une section ci-dessous voor accéder aux informations et documents.",
+  welcome_sub: "Sélectionnez une section ci-dessous pour accéder aux informations et documents.",
 
   card_insurance_desc: "Le document d'assurance officiel de Mirador del Mar.",
   card_documents_desc: "Projet de règlement prêt pour examen et discussion.",
@@ -32,7 +32,7 @@ window.translations.fr = {
   documents_title: "Règlements & Propositions",
   documents_text: "Projet de règlement prêt pour examen et discussion lors de la prochaine réunion des propriétaires.",
   doc_en: "Common Area Rules – Residence (EN)",
-  doc_es: "Reglamento de zonas comunes – Residencia (ES)",
+  doc_es: "Reglamento de zones communes – Residencia (ES)",
   doc_fr: "Règlement des parties communes – Résidence (FR)",
   doc_nl: "Reglement gemeenschappelijke delen – Residentie (NL)",
 
@@ -71,10 +71,20 @@ window.translations.fr = {
 
   internet_title: "Internet & Télécom",
   internet_text: "Informations sur l'infrastructure internet, les connexions fibre, les routeurs et les détails du fournisseur.",
-  internet_loc: "Local télécom principal : Couloir de service du premier étage",
-  internet_provider: "Fournisseur : Movistar",
-  internet_speed: "Type de connexion : Fibre optique (FTTH)",
-  internet_support: "Support technique : Géré par l'opérateur de la copropriété",
+  internet_provider_title: "Détails du Fournisseur",
+  internet_type: "Type de connexion : Fibre optique (FTTH)",
+  internet_capacity: "Capacité du splitter : Boîte de distribution 1:8 (Jusqu'à 8 utilisateurs actifs)",
+  internet_guide_title: "Guide d'Installation de la Fibre (Pour les Techniciens)",
+  internet_guide_intro: "Suivez ces étapes et références pour le déploiement d'une nouvelle ligne de fibre d'abonné dans le bâtiment :",
+  internet_step_1: "Accès au local technique principal : Les fibres entrent dans le bâtiment au bout du garage souterrain (niveau -1). Le local est verrouillé. Les clés sont détenues par Rudi (App 3B, Portable : +32488421402) ou Francisca (App 3A|4A, WhatsApp uniquement : +34677549202).",
+  internet_step_2: "Connexion à la boîte de distribution : Les boîtes de distribution de fibre sont situées sur le mur droit du local technique. Avanza Fibra utilise une boîte de distribution 1:8. (Voir Photos 1 et 2)",
+  internet_step_3: "Acheminement depuis les armoires d'étage : Le chemin de déploiement le plus simple commence par l'armoire technique située à chaque étage (derrière la porte carrée blanche sur le mur gauche à côté de l'ascenseur). Note : Les portes des armoires des 2ème et 3ème étages sont actuellement cassées. Une fois réparée, la clé se trouvera dans la nouvelle boîte à clés du garage souterrain.",
+  internet_step_4: "Tirer le câble vers le bas : Le technicien doit acheminer le câble de raccordement de fibre de l'armoire d'étage jusqu'au niveau du garage (-1). Ouvrez la boîte blanche au plafond située à gauche de l'ascenseur (Voir Photo 4). De ce point, le chemin des câbles entre directement dans le local technique principal contenant les boîtes de distribution.",
+  internet_step_5: "Connexion à l'intérieur de l'appartement : L'extrémité de la fibre côté abonné va directement dans l'appartement. Elle pénètre via l'armoire technique cachée située à proximité de la porte d'entrée de l'appartement (Voir Photo 3).",
+  internet_gallery_title: "Photos de Référence pour l'Installation",
+  internet_photo_1: "Photo 1 : Local technique principal - Boîte de distribution (Fermée)",
+  internet_photo_2: "Photo 2 : Répartiteur Avanza 1:8 (Tableau ouvert)",
+  internet_photo_3: "Photo 3 : Armoire technique d'étage et point d'entrée de l'appartement",
 
   maintenance_title: "Maintenance",
   maintenance_text: "Informations générales sur l'entretien de Mirador del Mar.",
