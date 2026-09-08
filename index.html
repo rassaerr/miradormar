@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- Added class="notranslate" to stop browsers from auto-translating the page -->
+<html lang="en" class="notranslate">
 <head>
   <meta charset="UTF-8" />
   <title>Mirador del Mar – Building Information Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  
+  <!-- Explicitly instructs Google Chrome/Google Translate not to offer automatic translation -->
+  <meta name="google" content="notranslate" />
+
+  <script>
+    // Genereer één keer de unieke versie (cache-buster) voor zowel CSS als JS
+    const version = Date.now();
+
+    // Dynamisch laden van de stylesheet
+    const css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.href = "assets/css/style.css?v=" + version;
+    document.head.appendChild(css);
+
+    // Dynamisch laden van het JavaScript-bestand (met defer voor correcte laadvolgorde)
+    const script = document.createElement("script");
+    script.src = "assets/js/main.js?v=" + version;
+    script.defer = true;
+    document.head.appendChild(script);
+  </script>
 </head>
 
 <body>
@@ -12,17 +32,19 @@
     <h1 data-i18n="title">Mirador del Mar – Palomares</h1>
 
     <nav>
-      <a href="#insurance" data-i18n="nav_insurance">Insurance</a>
-      <a href="#documents" data-i18n="nav_documents">Documents</a>
-      <a href="#keys" data-i18n="nav_keys">Technical Room Keys</a>
-      <a href="#electricity" data-i18n="nav_electricity">Electricity</a>
-      <a href="#water" data-i18n="nav_water">Water</a>
-      <a href="#maintenance" data-i18n="nav_maintenance">Maintenance</a>
-      <a href="#contacts" data-i18n="nav_contacts">Contacts</a>
-      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="insurance.html" data-i18n="nav_insurance">Insurance</a>
+      <a href="documents.html" data-i18n="nav_documents">Documents</a>
+      <a href="keys.html" data-i18n="nav_keys">Technical Room Keys</a>
+      <a href="electricity.html" data-i18n="nav_electricity">Electricity</a>
+      <a href="water.html" data-i18n="nav_water">Water</a>
+      <a href="maintenance.html" data-i18n="nav_maintenance">Maintenance</a>
+      <a href="contacts.html" data-i18n="nav_contacts">Contacts</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
     </nav>
 
-    <div class="lang-select">
+    <!-- Excluded the language switcher panel itself from any external translation tool overrides -->
+    <div class="lang-select notranslate">
       <select id="languageSwitcher">
         <option value="en">English</option>
         <option value="es">Español</option>
@@ -33,129 +55,56 @@
   </header>
 
   <main>
-
-    <!-- Insurance -->
-    <section id="insurance">
-      <h2 data-i18n="insurance_title">Building Insurance</h2>
-      <p data-i18n="insurance_text">The official insurance document for Mirador del Mar.</p>
-      <ul>
-        <li><a href="docs/insurance.pdf" target="_blank" data-i18n="insurance_pdf">Insurance Document (PDF)</a></li>
-      </ul>
+    <section class="welcome-section">
+      <h2 data-i18n="welcome_title">Building Information Portal</h2>
+      <p data-i18n="welcome_sub">Select a section below to access information and documents.</p>
     </section>
 
-    <!-- Documents -->
-    <section id="documents">
-      <h2 data-i18n="documents_title">General Documents</h2>
-      <p data-i18n="documents_text">Technical info, manuals, regulations, and future additions for Mirador del Mar.</p>
-      <ul id="doc-list"></ul>
-    </section>
+    <div class="portal-grid">
+      <a href="insurance.html" class="portal-card">
+        <h3 data-i18n="nav_insurance">Insurance</h3>
+        <p data-i18n="insurance_text">The official insurance document for Mirador del Mar.</p>
+      </a>
 
-    <!-- Keys -->
-    <section id="keys">
-      <h2 data-i18n="keys_title">Technical Room Keys</h2>
-      <p data-i18n="keys_text">Overview of keys and access points for the technical rooms of Mirador del Mar.</p>
+      <a href="documents.html" class="portal-card">
+        <h3 data-i18n="nav_documents">Documents</h3>
+        <p data-i18n="documents_text">Draft regulations ready for review and discussion.</p>
+      </a>
 
-      <div class="key-category">
-        <h3 data-i18n="keys_elec_title">Electricity Room</h3>
-        <ul>
-          <li data-i18n="keys_elec_loc">Location: Ground floor, next to the main entrance</li>
-          <li data-i18n="keys_elec_holder">Key Holder: Building Manager</li>
-          <li data-i18n="keys_elec_purpose">Purpose: Main electrical panels, breakers, meter access</li>
-        </ul>
-      </div>
+      <a href="keys.html" class="portal-card">
+        <h3 data-i18n="nav_keys">Technical Room Keys</h3>
+        <p data-i18n="keys_text">Overview of keys and technical room access.</p>
+      </a>
 
-      <div class="key-category">
-        <h3 data-i18n="keys_water_title">Water Room</h3>
-        <ul>
-          <li data-i18n="keys_water_loc">Location: Basement level</li>
-          <li data-i18n="keys_water_holder">Key Holder: Building Manager</li>
-          <li data-i18n="keys_water_purpose">Purpose: Main water valves, pressure system, meters</li>
-        </ul>
-      </div>
+      <a href="electricity.html" class="portal-card">
+        <h3 data-i18n="nav_electricity">Electricity</h3>
+        <p data-i18n="electricity_text">Meters, breakers, and infrastructure details.</p>
+      </a>
 
-      <div class="key-category">
-        <h3 data-i18n="keys_tel_title">Communications / Telecom Room</h3>
-        <ul>
-          <li data-i18n="keys_tel_loc">Location: First floor service corridor</li>
-          <li data-i18n="keys_tel_holder">Key Holder: Telecom provider + Building Manager</li>
-          <li data-i18n="keys_tel_purpose">Purpose: Fiber distribution, telephone lines, network equipment</li>
-        </ul>
-      </div>
+      <a href="water.html" class="portal-card">
+        <h3 data-i18n="nav_water">Water</h3>
+        <p data-i18n="water_text">Details about supply, main valves, and emergency procedures.</p>
+      </a>
 
-      <div class="key-category">
-        <h3 data-i18n="keys_maint_title">General Maintenance Room</h3>
-        <ul>
-          <li data-i18n="keys_maint_loc">Location: Parking level</li>
-          <li data-i18n="keys_maint_holder">Key Holder: Maintenance company</li>
-          <li data-i18n="keys_maint_purpose">Purpose: Tools, cleaning supplies, shared equipment</li>
-        </ul>
-      </div>
-    </section>
+      <a href="maintenance.html" class="portal-card">
+        <h3 data-i18n="nav_maintenance">Maintenance</h3>
+        <p data-i18n="maintenance_text">General upkeep and cleaning schedule information.</p>
+      </a>
 
-    <!-- Electricity -->
-    <section id="electricity">
-      <h2 data-i18n="electricity_title">Electricity</h2>
-      <p data-i18n="electricity_text">Information about electrical infrastructure, meters, breakers, and provider details.</p>
+      <a href="contacts.html" class="portal-card">
+        <h3 data-i18n="nav_contacts">Important Contacts</h3>
+        <p data-i18n="contacts_title">Contact details for management and emergencies.</p>
+      </a>
 
-      <ul>
-        <li data-i18n="electricity_loc">Main electrical room: Ground floor</li>
-        <li data-i18n="electricity_provider">Provider: Endesa</li>
-        <li data-i18n="electricity_breakers">Breaker panels: Inside the electricity room</li>
-        <li data-i18n="electricity_meters">Meter access: Managed by the building manager</li>
-      </ul>
-    </section>
-
-    <!-- Water -->
-    <section id="water">
-      <h2 data-i18n="water_title">Water</h2>
-      <p data-i18n="water_text">Details about water supply, main valves, meters, and emergency procedures.</p>
-
-      <ul>
-        <li data-i18n="water_loc">Main water room: Basement level</li>
-        <li data-i18n="water_provider">Provider: Galasa</li>
-        <li data-i18n="water_valve">Main shut-off valve: Inside the water room</li>
-        <li data-i18n="water_pressure">Pressure system: Next to the meter cluster</li>
-      </ul>
-    </section>
-
-    <!-- Maintenance -->
-    <section id="maintenance">
-      <h2 data-i18n="maintenance_title">Maintenance</h2>
-      <p data-i18n="maintenance_text">General maintenance information for Mirador del Mar.</p>
-
-      <ul>
-        <li data-i18n="maintenance_loc">Maintenance room: Parking level</li>
-        <li data-i18n="maintenance_company">Responsible company: (Add name)</li>
-        <li data-i18n="maintenance_cleaning">Cleaning schedule: (Add details)</li>
-        <li data-i18n="maintenance_pool">Garden/Pool maintenance: (Add contractor)</li>
-      </ul>
-    </section>
-
-    <!-- Contacts -->
-    <section id="contacts">
-      <h2 data-i18n="contacts_title">Important Contacts</h2>
-      <ul>
-        <li data-i18n="contacts_manager">Building Manager: manager@example.com</li>
-        <li data-i18n="contacts_emergency">Emergency: +34 123 456 789</li>
-      </ul>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-      <h2 data-i18n="about_title">About Mirador del Mar</h2>
-      <p data-i18n="about_text">
-        This portal centralizes all building-related information for the owners of Mirador del Mar in Palomares.
-      </p>
-    </section>
-
+      <a href="about.html" class="portal-card">
+        <h3 data-i18n="nav_about">About</h3>
+        <p data-i18n="about_text">General portal information for building owners.</p>
+      </a>
+    </div>
   </main>
 
   <footer>
     <p>&copy; Mirador del Mar – Owners Portal</p>
   </footer>
-
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
