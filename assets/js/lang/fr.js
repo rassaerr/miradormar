@@ -79,7 +79,7 @@ window.translations.fr = {
   water_step_3: "Une fois ouverte, localisez et fermez complètement la vanne d'arrêt principale bleue à l'intérieur de l'armoire pour arrêter le flux d'eau principal. (Voir les photos de référence ci-dessous concernant la fuite majeure de 2025).",
   water_leak_outside_title: "B) Fuite À L'EXTÉRIEUR du Bâtiment",
   water_leak_outside_text: "Si une fuite d'eau est observée dans la rue, sur le trottoir ou sur la ligne d'alimentation principale à l'extérieur du périmètre du bâtiment :",
-  water_step_outside: "N'essayez pas de manipuler les vannes internes. Signalez immédiatement le problème à la ligne d'urgence de Galasa au +34 950 39 31 11 et alertez l'administration du bâtiment.",
+  water_step_outside: "N'essayez pas de manipuler les vannes internes. Signalez immédiatement le problème à la ligne d'urgence de Galasa et alertez l'administration du bâtiment.",
   water_shutdown_title: "C) Procédure en Cas de Coupure Générale d'Eau (Coupures d'Eau)",
   water_critical_warning: "AVERTISSEMENT CRITIQUE POUR LES CHAUFFE-EAU ÉLECTRIQUES (CUMULUS) :",
   water_boiler_risk: "Ne tirez jamais d'eau chaude pendant une coupure : Utiliser de l'eau chaude lorsque l'alimentation principale est coupée peut vider votre chauffe-eau électrique. Cela peut entraîner une marche à sec et une surchauffe critique des résistances internes.",

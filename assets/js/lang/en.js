@@ -79,7 +79,7 @@ window.translations.en = {
   water_step_3: "Once open, locate and completely close the main blue shut-off valve inside the cabinet to stop the primary water flow. (See reference photos below from the major 2025 leak event).",
   water_leak_outside_title: "B) Leak OUTSIDE the Building",
   water_leak_outside_text: "If a water leak is observed on the street, sidewalk, or main supply line outside the building perimeter:",
-  water_step_outside: "Do not attempt to operate internal valves. Immediately report the issue to the Galasa emergency line at +34 950 39 31 11 and alert the building management.",
+  water_step_outside: "Do not attempt to operate internal valves. Immediately report the issue to the Galasa emergency line and alert the building management.",
   water_shutdown_title: "C) Procedure in Case of a Main Water Shutdown (Water Cuts)",
   water_critical_warning: "CRITICAL WARNING FOR ELECTRIC BOILERS (WATER HEATERS):",
   water_boiler_risk: "Never draw hot water during a shutdown: Using hot water while the main supply is cut off can drain your electric boiler. This can lead to dry-firing and critical overheating of the internal elements.",

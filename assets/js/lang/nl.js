@@ -79,7 +79,7 @@ window.translations.nl = {
   water_step_3: "Eenmaal geopend, zoekt en sluit u de grote blauwe hoofdafsluitkraan binnenin de kast volledig om de primaire waterstroom te stoppen. (Zie de onderstaande referentiefoto's van de grote lekkage in 2025).",
   water_leak_outside_title: "B) Lekkage BUITEN het Gebouw",
   water_leak_outside_text: "Als er een waterlekkage wordt waargenomen op straat, het trottoir of de hoofdvoedingslijn buiten het gebouwperimeter:",
-  water_step_outside: "Probeer geen interne kranen te bedienen. Meld het probleem onmiddellijk aan de noodlijn van Galasa op +34 950 39 31 11 en waarschuw de gebouwbeheerder.",
+  water_step_outside: "Probeer geen interne kranen te bedienen. Meld het probleem onmiddellijk aan de noodlijn van Galasa en waarschuw de gebouwbeheerder.",
   water_shutdown_title: "C) Procedure in het Geval van een Algemene Wateronderbreking (Waterstoring)",
   water_critical_warning: "KRITIEKE WAARSCHUWING VOOR ELEKTRISCHE BOILERS (WATERVERWARMERS):",
   water_boiler_risk: "Gebruik nooit warm water tijdens een storing: Warm water verbruiken terwijl de hoofdtoevoer is afgesloten kan uw elektrische boiler leegtrekken. Dit kan leiden tot droogkoken en kritieke oververhitting van de interne verwarmingselementen.",

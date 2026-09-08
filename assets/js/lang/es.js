@@ -79,7 +79,7 @@ window.translations.es = {
   water_step_3: "Una vez abierto, localice y cierre por completo la válvula de cierre principal azul dentro del armario para detener el flujo de agua primario. (Ver fotos de referencia a continuación del gran incidente de fuga de 2025).",
   water_leak_outside_title: "B) Fuga FUERA del Edificio",
   water_leak_outside_text: "Si se observa una fuga de agua en la calle, la acera o la línea de suministro principal fuera del perímetro del edificio:",
-  water_step_outside: "No intente manipular las válvulas internas. Informe inmediatamente del problema a la línea de emergencia de Galasa al +34 950 39 31 11 y alerte a la administración del edificio.",
+  water_step_outside: "No intente manipular las válvulas internas. Informe inmediatamente del problema a la línea de emergencia de Galasa y alerte a la administración del edificio.",
   water_shutdown_title: "C) Procedimiento en Caso de Corte del Suministro Principal de Agua",
   water_critical_warning: "ADVERTENCIA CRÍTICA PARA TERMOS ELÉCTRICOS (CALENTADORES):",
   water_boiler_risk: "No use agua caliente durante un corte: Utilizar agua caliente mientras el suministro principal está cortado puede vaciar el termo eléctrico. Esto puede provocar un funcionamiento en seco y un sobrecalentamiento crítico de las resistencias.",
