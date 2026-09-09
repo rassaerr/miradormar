@@ -57,13 +57,13 @@ function applyTranslations(lang) {
   elements.forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (dict[key] !== undefined) {
-      el.textContent = dict[key];
+      // FIX: Gebruik innerHTML zodat <strong> en <a> tags correct worden gerenderd
+      el.innerHTML = dict[key];
       updatedCount++;
     }
   });
   console.log("[i18n-DEBUG] Translation finish: " + updatedCount + " elements updated.");
 }
-
 function loadLanguageScript(lang, callback) {
   console.log("[i18n-DEBUG] --- Step 2: Loading Language Asset File ---");
 
