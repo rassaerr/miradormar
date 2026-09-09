@@ -52,9 +52,9 @@
   <main>
     <section id="water">
       <h2 data-i18n="water_title">Water</h2>
-      <p data-i18n="water_text">Details about water supply, main valves, meters, and emergency procedures.</p>
+      <p data-i18n="water_text">Details regarding water supply, main valves, meters, and emergency procedures.</p>
 
-      <!-- Provider & Algemene specificaties -->
+      <!-- 1. Provider Details -->
       <div class="tech-card">
         <h3 data-i18n="water_provider_title">Provider Details</h3>
         <ul class="notranslate">
@@ -64,44 +64,51 @@
           <li><strong>Official Website:</strong> <a href="https://galasa.es" target="_blank">www.galasa.es</a></li> 
           <li><strong>Interruptions:</strong> <a href="https://www.galasa.es/interrupciones-suministro" target="_blank">www.galasa.es/interrupciones-suministro</a></li> 
         </ul>
-        <hr>
-        <ul>
-          <li data-i18n="water_loc"><strong>Main water room:</strong> Basement level</li>
-          <li data-i18n="water_valve"><strong>Main shut-off valve:</strong> Inside the water room</li>
-          <li data-i18n="water_meters_count"><strong>Water Meters:</strong> 13 personal meters in total (1 for each apartment, 1 for the common area)</li>
-          <li data-i18n="water_pressure"><strong>Pressure system:</strong> Next to the meter cluster</li>
+      </div>
+
+      <!-- 2. Local Plumber -->
+      <div class="tech-card">
+        <h3 data-i18n="water_plumber_section_title">Local Plumber</h3>
+        <ul class="notranslate">
+          <li><strong>Emergency / Repairs:</strong> <a href="https://wa.me/34666701980" target="_blank"><strong>+34 666 70 19 80</strong></a> (WhatsApp available in Spanish or English)</li>
+          <li><strong>Availability:</strong> <span data-i18n="water_plumber_hours">Closed on weekends</span></li>
         </ul>
       </div>
 
-      <!-- Noodhandleiding voor Lekkages -->
+      <!-- 3. General Information & Technical Specs -->
+      <div class="tech-card">
+        <h3 data-i18n="water_specs_title">General Information</h3>
+        <ul>
+          <li data-i18n="water_loc"><strong>Main water cabinet:</strong> Outdoors, underground entrance, left cabinet</li>
+          <li data-i18n="water_valve"><strong>Main (blue) shut-off valve:</strong> Bottom left inside the water cabinet</li>
+  <li data-i18n="water_meters_count"><strong>Water Meters:</strong> 15 meters in total (13 for individual apartments labelled within 1A to 4D, 1 for the common area labelled '14 LOCAL', and 1 for the swimming pool)</li>          <li data-i18n="water_meter_type"><strong>Meter Type & Manual Readings:</strong> All installed water meters are analogue mechanical units with no remote or smart readout capability. Prior to issuing each invoice, a Galasa technician physically visits the main water cabinet to read every meter on-site.</li>
+          <li data-i18n="water_pressure"><strong>Pressure system:</strong> Located next to the meter cluster</li>
+          <li data-i18n="water_outdoor_taps"><strong>Outdoor Taps:</strong> The 7 outdoor taps across the complex are strictly reserved for cleaning common areas and maintaining the garden. Private use is not permitted.</li>
+        </ul>
+      </div>
+
+      <!-- Emergency Procedure -->
       <div class="technician-guide">
         <h3 data-i18n="water_emergency_title">Emergency Procedure: In Case of a Water Leak</h3>
         <p data-i18n="water_emergency_intro">If you detect or suspect a water leak, immediately follow these instructions based on the location:</p>
         
-        <h4 data-i18n="water_leak_inside_title">A) Leak INSIDE the Building Infrastructure</h4>
-        <p data-i18n="water_leak_inside_text">In case of an internal building leak, the main water supply must be shut down immediately:</p>
-        <ol>
-          <li>
-            <span data-i18n="water_step_1">Go to the main water cabinet located at the entrance of the underground garage, on the left side.</span>
-          </li>
-          <li>
-            <span data-i18n="water_step_2">The cabinet is locked. For rapid emergency response, the key can be accessed immediately via the key safe using the master access code.</span>
-          </li>
-          <li>
-            <span data-i18n="water_step_3">Once open, locate and completely close the main blue shut-off valve inside the cabinet to stop the primary water flow. (See reference photos below from the major 2025 leak event).</span>
-          </li>
-        </ol>
+        <h4 data-i18n="water_leak_apartment_title">A) Leak INSIDE an Apartment</h4>
+        <p data-i18n="water_leak_apartment_text">In the event of a leak inside an apartment, immediately isolate the water supply directly inside the property using the main internal stopcock (typically located inside the boiler cupboard; see Photo 6). If that valve is inaccessible, jammed, or does not resolve the leak, go to the main water cabinet at the entrance (see Photo 1), unlock the door using the key safe, and close your apartment's individual stopcock labelled 1A to 4D (see Photo 4).</p>
 
-        <h4 data-i18n="water_leak_outside_title">B) Leak OUTSIDE the Building</h4>
-        <p data-i18n="water_leak_outside_text">If a water leak is observed on the street, sidewalk, or main supply line outside the building perimeter:</p>
+<h4 data-i18n="water_leak_inside_title">B) Leak INSIDE the Building Common Area</h4>
+        <p data-i18n="water_leak_inside_text">In the event of a leak in the internal common areas of the building, go to the main water cabinet at the entrance and unlock the door using the key safe. Locate and close the stopcock labelled <strong>'14 LOCAL'</strong> to shut off the common area supply (see Photo 5).<br><em>Note: If the leak involves the swimming pool, close the unlabelled pool supply valve located at the bottom right of the cabinet (see Photo 7).</em></p>
+<h4 data-i18n="water_leak_general_title">C) General Leak in the Building</h4>
+        <p data-i18n="water_leak_general_text">In the event of a major or general leak in the building requiring the primary supply to be isolated, go to the main water cabinet at the entrance (see Photo 2) and unlock the door using the key safe. Completely close the main blue shut-off valve located at the bottom left of the cabinet (marked with a red circle in Photo 2; see also Photo 3).</p>
+        <h4 data-i18n="water_leak_outside_title">D) Leak OUTSIDE the Building</h4>
+        <p data-i18n="water_leak_outside_text">If a water leak is observed on the street, pavement, or main supply line outside the building perimeter:</p>
         <ul>
           <li>
-            <span data-i18n="water_step_outside">Do not attempt to operate internal valves. Immediately report the issue to the Galasa emergency line at +34 950 39 12 00 and alert the building management.</span>
+            <span data-i18n="water_step_outside">Do not attempt to operate internal valves. Immediately report the incident to the Galasa emergency line on +34 950 39 12 00 and notify building management.</span>
           </li>
         </ul>
 
-        <!-- Handleiding voor Wateronderbrekingen (Water Shutoffs) -->
-        <h4 data-i18n="water_shutdown_title">C) Procedure in Case of a Main Water Shutdown (Water Cuts)</h4>
+        <!-- Water Shutdowns -->
+        <h4 data-i18n="water_shutdown_title">Procedure in Case of a Main Water Shutdown (Water Cuts)</h4>
         <p data-i18n="water_shutdown_intro">Due to the ageing main water supply infrastructure in Palomares, temporary water shutdowns occur frequently. Outages can last anywhere from 1 to 12 hours. In most cases, you simply have to wait for the supply to be restored.</p>
         
         <div class="alert-box">
@@ -117,29 +124,45 @@
               <span data-i18n="water_boiler_reset"><strong>Boiler stopped working? Do not replace it yet:</strong> If the boiler fails to heat up after water is restored but shows no physical leaks, <strong>never agree to have the entire unit replaced straight away</strong>. In most cases, the thermal safety switch has tripped. There is a red safety reset button located behind the bottom cover plate.</span>
             </li>
             <li>
-              <span data-i18n="water_boiler_danger"><strong>DANGER - 230V Electrical Hazard:</strong> The reset button is located next to live electrical terminals. <strong>Never attempt to open this cover yourself</strong>. Ensure a qualified person or certified electrician handles this. In case of issues, contact a professional plumber.</span>
+              <span data-i18n="water_boiler_danger"><strong>DANGER - 230V Electrical Hazard:</strong> The reset button is located next to live electrical terminals. <strong>Never attempt to open this cover yourself</strong>. Ensure a qualified person or certified electrician handles this. In case of issues, contact our local plumber via WhatsApp (Spanish/English) at <a href="https://wa.me/34666701980" target="_blank" class="notranslate"><strong>+34 666 70 19 80</strong></a> (closed on weekends).</span>
             </li>
             <li>
-              <span data-i18n="water_announcements"><strong>Official Announcements:</strong> Planned service disruptions and emergency repairs are published directly by Galasa on their website under</span> <a href="https://galasa.es" target="_blank" class="notranslate">www.galasa.es</a>.
+              <span data-i18n="water_announcements"><strong>Official Disruptions & Emergency Repairs:</strong> Planned service outages and emergency repair notices are published directly on Galasa's dedicated supply updates page: <a href="https://www.galasa.es/interrupciones-suministro" target="_blank" class="notranslate">www.galasa.es/interrupciones-suministro</a>.</span>
             </li>
           </ul>
         </div>
       </div>
 
       <div class="photo-gallery">
-        <h3 data-i18n="water_gallery_title">Incident Reference Photos (2025 Main Leak)</h3>
+        <h3 data-i18n="water_gallery_title">Incident & Equipment Reference Photos</h3>
         <div class="gallery-grid">
           <div class="gallery-item">
             <img src="img/water_cabinet_entrance_left_14_meters.jpeg" alt="Water Cabinet Entrance Location" />
             <p><strong data-i18n="water_photo_lbl_1">Photo 1:</strong> <span data-i18n="water_photo_1">Main Water Cabinet Location (Entrance of Underground Garage, Left Side)</span></p>
           </div>
           <div class="gallery-item">
-            <img src="img/water_main_valve_incabinet_at_entrance.jpeg" alt="Water Main Cabinet Opened" />
-            <p><strong data-i18n="water_photo_lbl_2">Photo 2:</strong> <span data-i18n="water_photo_2">Inside the Cabinet at the Entrance - Primary Valve System</span></p>
+            <img src="img/water_main_valve_incabinet_at_entrance.jpeg" alt="Inside the Cabinet at Entrance" />
+            <p><strong data-i18n="water_photo_lbl_2">Photo 2:</strong> <span data-i18n="water_photo_2">Inside the Cabinet at the Entrance – Primary Valve System</span></p>
           </div>
           <div class="gallery-item">
             <img src="img/waterleak_main_shutoff_valve.jpeg" alt="Main Blue Valve Shutoff" />
-            <p><strong data-i18n="water_photo_lbl_3">Photo 3:</strong> <span data-i18n="water_photo_3">The Main Blue Valve That Needs to be Closed in Case of an Emergency Leak</span></p>
+            <p><strong data-i18n="water_photo_lbl_3">Photo 3:</strong> <span data-i18n="water_photo_3">Main Blue Valve – Shut-off for General Building Leaks</span></p>
+          </div>
+          <div class="gallery-item">
+            <img src="img/individual_apartments_1a_4d.jpeg" alt="Individual Apartments Water Meters & Stopcocks" />
+            <p><strong data-i18n="water_photo_lbl_4">Photo 4:</strong> <span data-i18n="water_photo_4">Individual Apartment Water Meters & Stopcocks (Labelled 1A to 4D)</span></p>
+          </div>
+          <div class="gallery-item">
+            <img src="img/water_cabinet_common_area_label_14.jpeg" alt="Common Area Meter & Stopcock Labelled 14 LOCAL" />
+            <p><strong data-i18n="water_photo_lbl_5">Photo 5:</strong> <span data-i18n="water_photo_5">Common Area Water Meter & Stopcock (Labelled '14 LOCAL')</span></p>
+          </div>
+          <div class="gallery-item">
+            <img src="img/main_water_supply_inside_app.jpeg" alt="Internal Apartment Main Water Shut-off Valve" />
+            <p><strong data-i18n="water_photo_lbl_6">Photo 6:</strong> <span data-i18n="water_photo_6">Internal Apartment Main Water Shut-off Valve (Inside Boiler Cupboard)</span></p>
+          </div>
+          <div class="gallery-item">
+            <img src="img/water_swimmingpool_unlabelled.jpeg" alt="Swimming Pool Supply Valve" />
+            <p><strong data-i18n="water_photo_lbl_7">Photo 7:</strong> <span data-i18n="water_photo_7">Swimming Pool Supply Valve & Tap (Unlabelled Valve at Bottom Right)</span></p>
           </div>
         </div>
       </div>
