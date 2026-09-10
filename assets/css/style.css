@@ -101,3 +101,16 @@ footer {
   border-left-color: #b30000;
 }
 
+/* Emergency menu item – subtle red accent */
+nav a.nav-emergency {
+  color: #b30000;          /* deep red text */
+  font-weight: 600;        /* slightly bolder */
+}
+
+/* Optional: hover effect */
+nav a.nav-emergency:hover {
+  color: #ff0000;          /* brighter red on hover */
+  text-decoration: underline;
+}
+
+
