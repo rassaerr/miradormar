@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <title>Emergency – Mirador del Mar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google" content="notranslate" />
+
+  <script>
+    const version = Date.now();
+
+    const css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.href = "assets/css/style.css?v=" + version;
+    document.head.appendChild(css);
+
+    const script = document.createElement("script");
+    script.src = "assets/js/main.js?v=" + version;
+    script.defer = true;
+    document.head.appendChild(script);
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1 data-i18n="title">Mirador del Mar – Palomares</h1>
+
+    <nav>
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="insurance.html" data-i18n="nav_insurance">Insurance</a>
+      <a href="documents.html" data-i18n="nav_documents">Documents</a>
+      <a href="keys.html" data-i18n="nav_keys">Technical Room Keys</a>
+      <a href="electricity.html" data-i18n="nav_electricity">Electricity</a>
+      <a href="water.html" data-i18n="nav_water">Water</a>
+      <a href="internet.html" data-i18n="nav_internet">Internet</a>
+      <a href="maintenance.html" data-i18n="nav_maintenance">Maintenance</a>
+      <a href="contacts.html" data-i18n="nav_contacts">Contacts</a>
+      <a href="emergency.html" data-i18n="nav_emergency">Emergency</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+    </nav>
+
+    <div class="lang-select notranslate">
+      <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="nl">Nederlands</option>
+      </select>
+    </div>
+  </header>
+
+<main>
+    <section id="emergency">
+      <h2 data-i18n="emergency_title">Emergency Numbers</h2>
+      <p data-i18n="emergency_text">Critical emergency contacts for Palomares, Vera, and surrounding areas.</p>
+
+      <div class="alert-box red-alert">
+        <h3 data-i18n="emergency_general_title">General Emergencies</h3>
+        <ul>
+          <li data-i18n="emergency_112"><strong>112:</strong> General emergencies (police, fire, ambulance)</li>
+        </ul>
+      </div>
+
+      <h3 data-i18n="emergency_police_title">Police</h3>
+      <ul>
+        <li data-i18n="emergency_police_local"><strong>Policía Local (Cuevas del Almanzora):</strong> +34 950 45 80 81</li>
+        <li data-i18n="emergency_guardia"><strong>Guardia Civil (Vera):</strong> +34 950 39 00 56</li>
+      </ul>
+
+      <h3 data-i18n="emergency_medical_title">Medical</h3>
+      <ul>
+        <li data-i18n="emergency_061"><strong>061:</strong> Ambulance / urgent medical care</li>
+        <li data-i18n="emergency_healthcenter"><strong>Centro de Salud Vera:</strong> +34 950 45 85 00</li>
+        <li data-i18n="emergency_hospital"><strong>Hospital La Inmaculada (Huércal-Overa):</strong> +34 950 02 00 00</li>
+      </ul>
+
+      <h3 data-i18n="emergency_fire_title">Fire Brigade</h3>
+      <ul>
+        <li data-i18n="emergency_fire"><strong>Bomberos Levante Almeriense (Vera):</strong> +34 950 39 00 81</li>
+      </ul>
+    </section>
+  </main>
+

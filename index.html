@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<!-- Added class="notranslate" to stop browsers from auto-translating the page -->
 <html lang="en" class="notranslate">
 <head>
   <meta charset="UTF-8" />
   <title>Mirador del Mar – Building Information Portal</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <!-- Explicitly instructs Google Chrome/Google Translate not to offer automatic translation -->
   <meta name="google" content="notranslate" />
 
   <script>
-    // Genereer één keer de unieke versie (cache-buster) voor zowel CSS als JS
     const version = Date.now();
 
-    // Dynamisch laden van de stylesheet
     const css = document.createElement("link");
     css.rel = "stylesheet";
     css.href = "assets/css/style.css?v=" + version;
     document.head.appendChild(css);
 
-    // Dynamisch laden van het JavaScript-bestand (met defer voor correcte laadvolgorde)
     const script = document.createElement("script");
     script.src = "assets/js/main.js?v=" + version;
     script.defer = true;
@@ -41,10 +35,10 @@
       <a href="internet.html" data-i18n="nav_internet">Internet</a>
       <a href="maintenance.html" data-i18n="nav_maintenance">Maintenance</a>
       <a href="contacts.html" data-i18n="nav_contacts">Contacts</a>
+      <a href="emergency.html" data-i18n="nav_emergency">Emergency</a>
       <a href="about.html" data-i18n="nav_about">About</a>
     </nav>
 
-    <!-- Excluded the language switcher panel itself from any external translation tool overrides -->
     <div class="lang-select notranslate">
       <select id="languageSwitcher">
         <option value="en">English</option>
@@ -62,51 +56,58 @@
     </section>
 
     <div class="portal-grid">
+
       <a href="insurance.html" class="portal-card">
         <h3 data-i18n="nav_insurance">Insurance</h3>
-        <p data-i18n="card_insurance_desc">The official insurance document for Mirador del Mar.</p>
+        <p data-i18n="card_insurance_desc">The official building insurance document for Mirador del Mar.</p>
       </a>
 
       <a href="documents.html" class="portal-card">
         <h3 data-i18n="nav_documents">Documents</h3>
-        <p data-i18n="card_documents_desc">Draft regulations ready for review and discussion.</p>
+        <p data-i18n="card_documents_desc">Draft building regulations ready for review and discussion.</p>
       </a>
 
       <a href="keys.html" class="portal-card">
         <h3 data-i18n="nav_keys">Technical Room Keys</h3>
-        <p data-i18n="card_keys_desc">Overview of keys and technical room access.</p>
+        <p data-i18n="card_keys_desc">Overview of keys and access routes to technical rooms.</p>
       </a>
 
       <a href="electricity.html" class="portal-card">
         <h3 data-i18n="nav_electricity">Electricity</h3>
-        <p data-i18n="card_electricity_desc">Meters, breakers, and infrastructure details.</p>
+        <p data-i18n="card_electricity_desc">Details regarding meters, consumer units and infrastructure.</p>
       </a>
 
       <a href="water.html" class="portal-card">
         <h3 data-i18n="nav_water">Water</h3>
-        <p data-i18n="card_water_desc">Details about supply, main valves, and emergency procedures.</p>
+        <p data-i18n="card_water_desc">Details on mains supply, isolation valves and emergencies.</p>
       </a>
 
-      <!-- HERSTELD: Internet-kaart teruggeplaatst op de juiste positie -->
       <a href="internet.html" class="portal-card">
         <h3 data-i18n="nav_internet">Internet</h3>
-        <p data-i18n="card_internet_desc">Details about network infrastructure, fiber and router.</p>
+        <p data-i18n="card_internet_desc">Details of network infrastructure, full fibre and routers.</p>
       </a>
 
       <a href="maintenance.html" class="portal-card">
         <h3 data-i18n="nav_maintenance">Maintenance</h3>
-        <p data-i18n="card_maintenance_desc">General upkeep and cleaning schedule information.</p>
+        <p data-i18n="card_maintenance_desc">General maintenance and cleaning information.</p>
       </a>
 
       <a href="contacts.html" class="portal-card">
-        <h3 data-i18n="nav_contacts">Important Contacts</h3>
-        <p data-i18n="card_contacts_desc">Contact details for management and emergencies.</p>
+        <h3 data-i18n="nav_contacts">Contacts</h3>
+        <p data-i18n="card_contacts_desc">Contact details for property management and emergencies.</p>
+      </a>
+
+      <!-- ⭐ EMERGENCY CARD (NOW VISIBLE) -->
+      <a href="emergency.html" class="portal-card red-alert">
+        <h3 data-i18n="nav_emergency">Emergency</h3>
+        <p data-i18n="card_emergency_desc">Critical emergency numbers for Palomares & Vera region.</p>
       </a>
 
       <a href="about.html" class="portal-card">
         <h3 data-i18n="nav_about">About</h3>
-        <p data-i18n="card_about_desc">General portal information for building owners.</p>
+        <p data-i18n="card_about_desc">General portal information for property owners.</p>
       </a>
+
     </div>
   </main>
 

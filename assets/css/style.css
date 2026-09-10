@@ -87,3 +87,17 @@ footer {
 .technician-guide { background: #f9f9f9; padding: 20px; border-left: 4px solid #0076a3; margin: 20px 0; border-radius: 4px; }
 .technician-guide ol { padding-left: 20px; }
 .technician-guide li { margin-bottom: 12px; }
+
+/* Emergency red alert card */
+.red-alert {
+  background-color: #ffebeb;        /* soft red background */
+  border-left: 6px solid #d40000;   /* strong red accent */
+  color: #600000;                   /* dark red text */
+}
+
+/* Optional: stronger hover effect */
+.red-alert:hover {
+  background-color: #ffd6d6;
+  border-left-color: #b30000;
+}
+
