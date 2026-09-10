@@ -1,20 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="notranslate">
 <head>
   <meta charset="UTF-8" />
   <title>About – Mirador del Mar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google" content="notranslate" />
+
   <script>
     const version = Date.now();
+
     const css = document.createElement("link");
     css.rel = "stylesheet";
     css.href = "assets/css/style.css?v=" + version;
     document.head.appendChild(css);
+
+    const script = document.createElement("script");
+    script.src = "assets/js/main.js?v=" + version;
+    script.defer = true;
+    document.head.appendChild(script);
   </script>
 </head>
+
 <body>
   <header>
     <h1 data-i18n="title">Mirador del Mar – Palomares</h1>
+
     <nav>
       <a href="index.html" data-i18n="nav_home">Home</a>
       <a href="insurance.html" data-i18n="nav_insurance">Insurance</a>
@@ -22,11 +32,14 @@
       <a href="keys.html" data-i18n="nav_keys">Technical Room Keys</a>
       <a href="electricity.html" data-i18n="nav_electricity">Electricity</a>
       <a href="water.html" data-i18n="nav_water">Water</a>
+      <a href="internet.html" data-i18n="nav_internet">Internet</a>
       <a href="maintenance.html" data-i18n="nav_maintenance">Maintenance</a>
       <a href="contacts.html" data-i18n="nav_contacts">Contacts</a>
+      <a href="emergency.html" data-i18n="nav_emergency">Emergency</a>
       <a href="about.html" data-i18n="nav_about">About</a>
     </nav>
-    <div class="lang-select">
+
+    <div class="lang-select notranslate">
       <select id="languageSwitcher">
         <option value="en">English</option>
         <option value="es">Español</option>
@@ -35,20 +48,18 @@
       </select>
     </div>
   </header>
+
   <main>
     <section id="about">
       <h2 data-i18n="about_title">About Mirador del Mar</h2>
       <p data-i18n="about_text">
-        This portal centralizes all building-related information for the owners of Mirador del Mar in Palomares.
+        This portal centralises all building information for property owners at Mirador del Mar in Palomares.
       </p>
     </section>
   </main>
-  <footer><p>&copy; Mirador del Mar – Owners Portal</p></footer>
-  <script>
-    const version = Date.now();
-    const script = document.createElement("script");
-    script.src = "assets/js/main.js?v=" + version;
-    document.body.appendChild(script);
-  </script>
+
+  <footer>
+    <p>&copy; Mirador del Mar – Owners Portal</p>
+  </footer>
 </body>
 </html>
