@@ -3,7 +3,7 @@
 <html lang="en" class="notranslate">
 <head>
   <meta charset="UTF-8" />
-  <title>Electricity – Mirador del Mar</title>
+  <title data-i18n="title">Electricity – Mirador del Mar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
   <!-- Blokkeer automatische pop-ups van Google Translate -->
@@ -51,18 +51,153 @@
       </select>
     </div>
   </header>
+  
   <main>
     <section id="electricity">
       <h2 data-i18n="electricity_title">Electricity</h2>
-      <p data-i18n="electricity_text">Information about electrical infrastructure, meters, breakers, and provider details.</p>
-      <ul>
-        <li data-i18n="electricity_loc">Main electrical room: Ground floor</li>
-        <li data-i18n="electricity_provider">Provider: Endesa</li>
-        <li data-i18n="electricity_breakers">Breaker panels: Inside the electricity room</li>
-        <li data-i18n="electricity_meters">Meter access: Managed by the building manager</li>
-      </ul>
+      <p class="section-intro" data-i18n="electricity_text">Information about electrical infrastructure, meters, breakers, and provider details.</p>
+      
+<!-- Provider Details -->
+      <div class="tech-card">
+        <h3 data-i18n="electricity_provider_title">Provider Details</h3>
+        <ul class="notranslate">
+          <li><strong>Company:</strong> Montajes Eléctricos Portillo S.A. / Distribuciones Eléctricas Portillo (CHC Energía)</li>
+          <li><strong>Local Office:</strong> Avda. Blas Infante, 4, 04617 Palomares (Cuevas del Almanzora, Almería)</li>
+          <li><strong>Phone:</strong> +34 950 61 80 35</li>
+          <li><strong>Support / Freephone:</strong> 900 373 272</li>
+          <li><strong>Email:</strong> <a href="mailto:info@portillosa.com">info@portillosa.com</a> / <a href="mailto:chcenergia@portillosa.com">chcenergia@portillosa.com</a></li>
+          <li><strong>Official Website:</strong> <a href="https://portillosa.com" target="_blank">portillosa.com</a></li>
+        </ul>
+      </div>
+
+<!-- Main Electrical Cabinet & Smart Meters -->
+      <div class="tech-card">
+        <h3 data-i18n="elec_cabinet_title">Main Electrical Cabinet & Smart Meters</h3>
+        <p>
+          <strong data-i18n="elec_cabinet_loc_label">Location:</strong> 
+          <span data-i18n="elec_cabinet_loc_value">Outdoor, located at the entrance to the underground car park on the right-hand side.</span>
+        </p>
+        <hr>
+        <div class="panel-image-container" style="margin-bottom: 15px;">
+          <img src="img/digital_meter.jpeg" alt="Main Outdoor Electrical Cabinet" style="max-width: 100%; height: auto; border-radius: 4px;" />
+          <p style="font-size: 0.9em; color: #666; margin-top: 5px;"><em data-i18n="elec_photo_outdoor">Main outdoor electrical cabinet containing the utility meters.</em></p>
+        </div>
+        <hr>
+        <ul>
+          <li><strong data-i18n="electricity_meters_lbl">Meter Technology & Reading:</strong> <span data-i18n="electricity_meters_desc">All installed electricity meters are digital smart meters (standardized utility models equipped with an LCD display and optical interface) featuring automated remote readout and smart grid telemetry. This allows Portillo to continuously record consumption data remotely without requiring manual, on-site meter readings.</span></li>
+        </ul>
+      </div>
+
+      <!-- Garage Electrical Panel & Swimming Pool Pumps -->
+      <div class="tech-card">
+        <h3 data-i18n="elec_garage_title">Garage Electrical Panel & Swimming Pool Pumps</h3>
+        <p>
+          <strong data-i18n="elec_garage_loc_label">Location:</strong> 
+          <span data-i18n="elec_garage_loc_value">Underground car park (basement level -1), in the corridor leading to the lift.</span>
+        </p>
+        <hr>
+        <div class="panel-image-container" style="margin-bottom: 15px;">
+          <img src="img/fusebox_garage_elevator.jpeg" alt="Garage Electrical Panel & Pool Pumps" style="max-width: 100%; height: auto; border-radius: 4px;" />
+          <p style="font-size: 0.9em; color: #666; margin-top: 5px;"><em data-i18n="elec_photo_1">Garage electrical panel (Gate, Alumbrado, C10 & C25 pool pumps) in the car park corridor next to the lift.</em></p>
+        </div>
+        <hr>
+        <p data-i18n="elec_garage_desc">This control box governs multiple communal garage and pool systems:</p>
+        <ul>
+          <li data-i18n="elec_garage_gate">
+            <strong>Garage Entrance Gate (Puerta):</strong> Circuit controlling the motorized vehicle access gate at the front of the garage.
+          </li>
+          <li data-i18n="elec_garage_lights">
+            <strong>Garage Lighting (Alumbrado):</strong> Circuit supplying the illumination for the underground car park spaces and corridors.
+          </li>
+          <li data-i18n="elec_pool_fuse_c25">
+            <strong>Fuse C25 (Filter Pump):</strong> Dedicated circuit for the main pool filtration pump, which handles the highest electricity consumption.
+          </li>
+          <li data-i18n="elec_pool_fuse_c10">
+            <strong>Fuse C10 (Water Jets):</strong> Dedicated circuit for the secondary water jet pump, operating with a lower electricity consumption.
+          </li>
+        </ul>
+      </div>
+
+      <!-- First Floor Electrical Panel A -->
+      <div class="tech-card">
+        <h3 data-i18n="elec_panel_a_title">First Floor Electrical Panel A</h3>
+        <p>
+          <strong data-i18n="elec_panel_a_loc_label">Location:</strong> 
+          <span data-i18n="elec_panel_a_loc_value">Hidden behind the large poster on the wall directly in front of the entry door. Remove the poster to access the box.</span>
+        </p>
+        <hr>
+        <p>
+          <strong data-i18n="elec_panel_a_scope_label">Panel Scope:</strong> 
+          <span data-i18n="elec_panel_a_scope_value">Common Indoor Services, Telecommunications, Lighting & Pool/Utility Controls.</span>
+        </p>
+        <hr>
+        <div class="panel-image-container" style="margin-bottom: 15px;">
+          <img src="img/fusebox_1A.jpeg" alt="First Floor Electrical Panel A" style="max-width: 100%; height: auto; border-radius: 4px;" />
+          <p style="font-size: 0.9em; color: #666; margin-top: 5px;"><em data-i18n="elec_photo_2">First floor electrical panel A.</em></p>
+        </div>
+        <hr>
+        <p><strong data-i18n="elec_panel_a_top_header">Top Row Circuit Breakdown:</strong></p>
+        <ul>
+          <li data-i18n="elec_panel_a_riti"><strong>Telecommunications Infrastructure (RITI):</strong> Telecommunications infrastructure power supply (ICT / <em>Registro de Infraestructuras de Telecomunicacion</em>). Powers the building's central telecom and TV distribution amplifiers.</li>
+          <li data-i18n="elec_panel_a_portero"><strong>Intercom System (Portero):</strong> Intercom system power supply. Feeds the Fermax electronic door keeper power supply unit located directly on the right side of the bottom row.</li>
+          <li data-i18n="elec_panel_a_lighting"><strong>Lighting (Alumbrado):</strong> Common area lighting circuit for the internal hallways and stairwells on this floor.</li>
+        </ul>
+        <p><strong data-i18n="elec_panel_a_mid_header">Middle Row Circuit Breakdown:</strong></p>
+        <ul>
+          <li data-i18n="elec_panel_a_fountain"><strong>Fountain (Fuente):</strong> Fountain circuit (pool water feature or decorative fountain pump).</li>
+          <li data-i18n="elec_panel_a_pool_lights"><strong>Pool & Exterior Lighting (Luz Piscina / Luz Exterior):</strong> Pool lighting and outdoor perimeter lighting circuits.</li>
+          <li data-i18n="elec_panel_a_laundry"><strong>Laundry Area (Lavanderia):</strong> Laundry area circuit (supplying washing machine or communal utility outlets).</li>
+          <li data-i18n="elec_panel_a_depuradora"><strong>Filtration Plant (Depuradora):</strong> Pool filtration plant / pump control circuit.</li>
+          <li data-i18n="elec_panel_a_restroom_lights"><strong>Restroom Lighting (Luz Aseos):</strong> Toilets/bathrooms lighting circuit for communal or service washrooms.</li>
+        </ul>
+        <p><strong data-i18n="elec_panel_a_bot_header">Bottom Row Components:</strong></p>
+        <ul>
+          <li data-i18n="elec_panel_a_elevator"><strong>Elevator (Ascensor):</strong> Elevator / lift power supply circuit (labeled on the lower frame).</li>
+          <li data-i18n="elec_panel_a_fermax"><strong>Intercom Power Supply (Fermax 8787):</strong> Electronic door keeper power supply unit (<em>Alimentador Portero Electronico</em>) providing low-voltage DC power for the building's intercom and door-release system.</li>
+        </ul>
+      </div>
+
+      <!-- First Floor Electrical Panel B -->
+      <div class="tech-card">
+        <h3 data-i18n="elec_panel_b_title">First Floor Electrical Panel B</h3>
+        <p>
+          <strong data-i18n="elec_panel_b_loc_label">Location:</strong> 
+          <span data-i18n="elec_panel_b_loc_value">First floor, located on the left-hand wall between the main entrance door and the door leading to the swimming pool.</span>
+        </p>
+        <hr>
+        <p>
+          <strong data-i18n="elec_panel_b_scope_label">Panel Scope:</strong> 
+          <span data-i18n="elec_panel_b_scope_value">Apartment or Main Utility Power Distribution (General Protection, Lighting, Common/Salon Circuits, Kitchen Appliances, and Heavy-Load Equipment).</span>
+        </p>
+        <hr>
+        <div class="panel-image-container" style="margin-bottom: 15px;">
+          <img src="img/fusebox_1B.jpeg" alt="First Floor Electrical Panel B" style="max-width: 100%; height: auto; border-radius: 4px;" />
+          <p style="font-size: 0.9em; color: #666; margin-top: 5px;"><em data-i18n="elec_photo_3">First floor electrical panel B.</em></p>
+        </div>
+        <hr>
+        <p><strong data-i18n="elec_panel_b_top_header">Top Row Circuit Breakdown (Protection & Lighting / Salón):</strong></p>
+        <ul>
+          <li data-i18n="elec_panel_b_diffs"><strong>General Differential / Power Differential / Lighting Differential (Diferencial General / Diferencial Fuerza / Diferencial Alumbrado):</strong> Main residual current circuit breakers (RCDs) providing earth-leakage protection for general lines, power outlets, and lighting circuits.</li>
+          <li data-i18n="elec_panel_b_bar_lights"><strong>Bar Lighting / Lounge Lighting (Al. Barra / Al. Salon):</strong> Lighting circuits for the main lounge/living area.</li>
+          <li data-i18n="elec_panel_b_gen_lights"><strong>General Lighting (Al. General):</strong> General lighting circuit.</li>
+          <li data-i18n="elec_panel_b_iron"><strong>Iron / Utility (Plancha):</strong> Dedicated circuit for an iron or heavy utility appliance.</li>
+        </ul>
+        <p><strong data-i18n="elec_panel_b_bot_header">Bottom Row Circuit Breakdown (Appliances & Heavy Loads):</strong></p>
+        <ul>
+          <li data-i18n="elec_panel_b_audio"><strong>Audio & Extractor Hood (Audio / Campana):</strong> Audio systems and kitchen extractor hood circuits.</li>
+          <li data-i18n="elec_panel_b_outlets"><strong>Power Outlets (Enchufes):</strong> General power outlet circuits (multiple standard socket lines).</li>
+          <li data-i18n="elec_panel_b_dishwasher"><strong>Dishwasher (Lavajillas):</strong> Dedicated circuit for the dishwasher.</li>
+          <li data-i18n="elec_panel_b_coffee"><strong>Coffee Machine (Cafetera):</strong> Dedicated circuit for the coffee machine or kitchen utility outlets.</li>
+          <li data-i18n="elec_panel_b_spare"><strong>Spare / Free (Libre):</strong> Spare/available circuit breaker.</li>
+          <li data-i18n="elec_panel_b_hob"><strong>Ceramic Hob (Vitro):</strong> Dedicated high-load circuit for the ceramic/induction hob (cooktop).</li>
+          <li data-i18n="elec_panel_b_oven"><strong>Oven (Horno):</strong> Dedicated high-load circuit for the oven.</li>
+          <li data-i18n="elec_panel_b_fryer"><strong>Deep Fryer (Freidora):</strong> Dedicated high-load circuit for a deep fryer or auxiliary heavy kitchen appliance.</li>
+        </ul>
+      </div>
+
     </section>
   </main>
+  
   <footer><p>&copy; Mirador del Mar – Owners Portal</p></footer>
 </body>
 </html>

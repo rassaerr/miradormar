@@ -113,4 +113,18 @@ nav a.nav-emergency:hover {
   text-decoration: underline;
 }
 
+.tech-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.75rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03);
+}
+
+.tech-card hr {
+  border: 0;
+  border-top: 1px solid #edf2f7;
+  margin: 1.25rem 0;
+}
 

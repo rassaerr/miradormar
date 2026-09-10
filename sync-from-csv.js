@@ -106,19 +106,36 @@ async function syncFromCsv() {
         console.log(`[DEEPL REQUEST] Brontekst: "${sourceText}"`);
         console.log(`--------------------------------------------------`);
         
-        try {
-          const result = await translator.translateText(
-            sourceText,
-            sourceLang.toUpperCase(),
-            targetLang.toUpperCase(),
-            { tagHandling: 'html' }
-          );
-          dataPerLang[targetLang][key] = result.text;
-          
-          console.log(`[DEEPL RESPONSE] Ontvangen vertaling: "${result.text}"`);
-          console.log(`--------------------------------------------------\n`);
-        } catch (err) {
-          console.error(`[DEEPL ERROR] Fout bij vertalen van '${key}' naar ${targetLang}:`, err.message);
+        let success = false;
+        let delay = 2000;
+        let attempts = 3;
+
+        for (let attempt = 1; attempt <= attempts; attempt++) {
+          try {
+            const result = await translator.translateText(
+              sourceText,
+              sourceLang.toUpperCase(),
+              targetLang.toUpperCase(),
+              { tagHandling: 'html' }
+            );
+            dataPerLang[targetLang][key] = result.text;
+            
+            console.log(`[DEEPL RESPONSE] Ontvangen vertaling: "${result.text}"`);
+            console.log(`--------------------------------------------------\n`);
+            success = true;
+            break;
+          } catch (err) {
+            console.error(`[DEEPL ERROR] Fout bij vertalen van '${key}' naar ${targetLang} (Poging ${attempt}/${attempts}):`, err.message);
+            if (attempt < attempts) {
+              console.log(`[RETRY] Wachten gedurende ${delay / 1000} seconden...`);
+              await new Promise(resolve => setTimeout(resolve, delay));
+              delay *= 2; // 2s, 4s, etc.
+            }
+          }
+        }
+
+        if (!success) {
+          console.error(`[DEEPL ERROR] Alle pogingen mislukt voor sleutel '${key}' naar ${targetLang}.`);
         }
       }
     }
