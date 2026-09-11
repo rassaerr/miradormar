@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="notranslate">
+<head>
+  <meta charset="UTF-8" />
+  <title>Garage &amp; Gate Access – Mirador del Mar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google" content="notranslate" />
+
+  <script>
+    const version = Date.now();
+
+    const css = document.createElement("link");
+    css.rel = "stylesheet";
+    css.href = "assets/css/style.css?v=" + version;
+    document.head.appendChild(css);
+
+    const script = document.createElement("script");
+    script.src = "assets/js/main.js?v=" + version;
+    script.defer = true;
+    document.head.appendChild(script);
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1 data-i18n="title">Mirador del Mar – Palomares</h1>
+
+    <nav>
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="emergency.html" class="nav-emergency" data-i18n="nav_emergency">Emergency</a>
+      <a href="insurance.html" data-i18n="nav_insurance">Insurance</a>
+      <a href="documents.html" data-i18n="nav_documents">Documents</a>
+      <a href="keys.html" data-i18n="nav_keys">Keys &amp; Access</a>
+      <a href="garage.html" class="active" data-i18n="nav_garage">Garage &amp; Gate</a>
+      <a href="electricity.html" data-i18n="nav_electricity">Electricity</a>
+      <a href="water.html" data-i18n="nav_water">Water</a>
+      <a href="internet.html" data-i18n="nav_internet">Internet</a>
+      <a href="maintenance.html" data-i18n="nav_maintenance">Maintenance</a>
+      <a href="contacts.html" data-i18n="nav_contacts">Contacts</a>
+      <a href="about.html" data-i18n="nav_about">About</a>
+    </nav>
+
+    <div class="lang-select notranslate">
+      <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="nl">Nederlands</option>
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h2 data-i18n="garage_page_title">Garage &amp; Gate Access</h2>
+      <p data-i18n="garage_page_subtitle">Nice Spin motor operation, emergency manual override, visual guide, and key fob programming.</p>
+    </section>
+
+    <div class="content-container">
+
+      <!-- SECTION 1: HOW IT WORKS -->
+      <section class="info-card">
+        <h3 data-i18n="garage_system_title">How the Garage Gate Works</h3>
+        <p data-i18n="garage_system_desc">
+          The main entrance to the underground car park is operated by a ceiling-mounted <strong>Nice Spin motor</strong> running along an overhead rail.
+        </p>
+        <p data-i18n="garage_system_receiver">
+          When you press your key fob, it sends a secure signal to a <strong>central control receiver</strong> located inside the locked communal plant room. The motor simply lifts and lowers the door—all fob permissions and security codes are stored and managed inside that central control unit.
+        </p>
+      </section>
+
+      <!-- SECTION 2: VISUAL REFERENCE GRID -->
+      <section class="info-card">
+        <h3 data-i18n="garage_gallery_title">Visual Component Reference</h3>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="img/gate1.jpeg" alt="Internal slide bolt and steel handle" loading="lazy" />
+            <p data-i18n="garage_photo_1_desc">
+              <strong>Frame &amp; Manual Lock Bolt</strong><br />
+              Inside frame showing the manual slide bolt (top) and steel lifting handle (lower section).
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <img src="img/gate2.jpeg" alt="Overhead rail and release cord" loading="lazy" />
+            <p data-i18n="garage_photo_2_desc">
+              <strong>Carriage &amp; Release Cord</strong><br />
+              Overhead track showing the drive carriage, towing arm, and black pull-cord release toggle.
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <img src="img/gate3_motorunit.jpeg" alt="Nice Spin overhead motor unit" loading="lazy" />
+            <p data-i18n="garage_photo_3_desc">
+              <strong>Overhead Motor Unit</strong><br />
+              Nice Spin motor assembly mounted on the ceiling directly above the driveway entrance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: MANUAL EMERGENCY OVERRIDE -->
+      <section class="info-card">
+        <h3 data-i18n="garage_manual_title">Emergency Manual Opening Instructions</h3>
+        <p data-i18n="garage_manual_intro">
+          During power outages or system maintenance, follow these steps to open or close the gate manually.
+        </p>
+
+        <div class="procedure-step">
+          <h4 data-i18n="garage_step1_title">Check the Frame Lock Bolt</h4>
+          <p data-i18n="garage_step1_text">
+            Inspect the inside frame of the door panel (Photo 1). Ensure the manual steel slide bolt is fully pulled back (unlocked). If engaged into the track, the gate cannot move.
+          </p>
+        </div>
+
+        <div class="procedure-step">
+          <h4 data-i18n="garage_step2_title">Disengage the Motor Drive</h4>
+          <p data-i18n="garage_step2_text">
+            Locate the black ball hanging from the overhead track (Photo 2). Pull the ball straight down firmly until you hear a clear click to uncouple the door from the motor belt.
+          </p>
+        </div>
+
+        <div class="callout-box warning-box">
+          <strong data-i18n="garage_warning_title">CRITICAL WARNING</strong>
+          <p data-i18n="garage_warning_text" class="mb-0">
+            Pull the release cord straight down only. <strong>Never pull horizontally or drag the door using the cord</strong>, as sideways pulling will break the internal release mechanism.
+          </p>
+        </div>
+
+        <div class="procedure-step">
+          <h4 data-i18n="garage_step3_title">Lift or Lower the Door</h4>
+          <p data-i18n="garage_step3_text">
+            Grasp the metal handle on the lower door panel (Photo 1) to lift or lower the gate smoothly along its side tracks by hand.
+          </p>
+        </div>
+
+        <div class="procedure-step">
+          <h4 data-i18n="garage_step4_title">Re-engage Automatic Mode</h4>
+          <p data-i18n="garage_step4_text">
+            Once power is restored, pull the release cord back towards the motor unit or press your key fob. The carriage will re-latch automatically onto the drive belt.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECTION 4: KEY FOBS & AUTHORISATION -->
+      <section class="info-card">
+        <h3 data-i18n="fob_title">Garage Key Fobs &amp; Replacement</h3>
+
+        <h4 data-i18n="fob_types_title">Official Fob Types</h4>
+        <p data-i18n="fob_types_desc">
+          Two official key fob models are used across the complex:
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="img/remote1.jpeg" alt="Nice Flor-S Key Fob" loading="lazy" />
+            <p data-i18n="fob_type_1_desc">
+              <strong>Nice Flor-S</strong><br />
+              Classic rectangular dark blue or black fob with 2 or 4 buttons.
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <img src="img/remote2.jpeg" alt="Nice ERA INTI Key Fob" loading="lazy" />
+            <p data-i18n="fob_type_2_desc">
+              <strong>Nice ERA INTI</strong><br />
+              Modern compact square fob, available in various colors.
+            </p>
+          </div>
+        </div>
+
+        <h4 data-i18n="fob_battery_title">Battery Replacement</h4>
+        <p data-i18n="fob_battery_desc">
+          If your fob LED is dim or fails to illuminate entirely, replace the coin battery:
+        </p>
+        <ul>
+          <li data-i18n="fob_bat_step1">Pry open the plastic casing gently using a coin or small screwdriver along the side seam.</li>
+          <li data-i18n="fob_bat_step2">Remove the exhausted coin battery (Type <strong>CR2032</strong> for ERA INTI or <strong>CR2016</strong> for Flor-S).</li>
+          <li data-i18n="fob_bat_step3">Insert a fresh 3V battery with the positive (<strong>+</strong>) side facing up, then snap the shell together.</li>
+        </ul>
+
+        <h4 data-i18n="fob_trouble_title">Troubleshooting Connection</h4>
+        <div class="callout-box warning-box">
+          <strong data-i18n="fob_redlight_title">Red light flashes, but the gate does not open?</strong>
+          <p data-i18n="fob_redlight_desc" class="mb-0">
+            If the red LED flashes on button press but the gate fails to respond (even with a fresh battery), the fob has lost its digital sync or its security clearance was wiped from the main receiver memory. The fob must be re-authorised.
+          </p>
+        </div>
+
+        <h4 data-i18n="fob_replace_title">Ordering &amp; Authorisation Procedure</h4>
+        
+        <div class="procedure-step">
+          <h4 data-i18n="fob_buy_heading">Purchasing a Replacement Fob</h4>
+          <p data-i18n="fob_buy_desc">
+            You can order compatible key fobs directly online (e.g. Amazon):
+          </p>
+          <ul>
+            <li data-i18n="fob_brand_nice"><strong>Official Nice Fobs:</strong> <code>Nice ERA INTI 2-Channel</code> or <code>Nice Flor-S</code> (Approx. <strong>€18 – €25</strong> on Amazon).</li>
+            <li data-i18n="fob_brand_generic"><strong>Generic Fobs:</strong> 433.92 MHz rolling-code fobs compatible with <i>Nice Flor-S</i> (Approx. <strong>€8 – €12</strong>).</li>
+          </ul>
+        </div>
+
+        <div class="procedure-step">
+          <h4 data-i18n="fob_auth_heading">Authorising Your New Fob</h4>
+          <p data-i18n="fob_auth_desc">
+            A new key fob will <strong>not open the gate out of the box</strong> because the complex uses a secure rolling-code system. Every new remote must be registered into the central control memory.
+          </p>
+          <p data-i18n="fob_auth_address">
+            <strong>Getting Access:</strong> Contact Francisca in order to have the code needed for this specific gate.
+          </p>
+          <p data-i18n="fob_auth_fee">
+            <strong>Authorisation Fee:</strong> Check with management regarding any local registration costs.
+          </p>
+        </div>
+
+        <div class="callout-box info-box">
+          <strong data-i18n="fob_how_it_works_title">How Authorisation Works</strong>
+          <p data-i18n="fob_how_it_works_desc" class="mb-0">
+            The system extracts the remote's unique factory digital ID and uploads it directly into the memory list of the Mirador del Mar gate system. Once registered, the gate will immediately recognise your remote.
+          </p>
+        </div>
+
+      </section>
+
+<!-- SECTION 5: TECHNICAL OVERVIEW (NICE & ROLLING CODE) -->
+      <section class="info-card">
+        <h3 data-i18n="tech_system_title">Technical Overview: Nice &amp; Rolling Code System</h3>
+        <p data-i18n="tech_system_intro">
+          For a quick technical look at how the remotes and gate communicate:
+        </p>
+
+        <ul class="tech-list">
+          <li><strong data-i18n="tech_freq_label">Frequency:</strong> <span data-i18n="tech_freq_text">Operates on standard 433.92 MHz radio frequency.</span></li>
+          <li><strong data-i18n="tech_rolling_label">Rolling Code Security:</strong> <span data-i18n="tech_rolling_text">Each button press generates a unique encrypted code using a rotating counter. This prevents code-grabbing and replay attacks.</span></li>
+          <li><strong data-i18n="tech_memory_label">Memory Registration:</strong> <span data-i18n="tech_memory_text">Because of the rolling code protocol, remotes cannot simply be cloned over the air; they must be explicitly programmed into the central receiver's memory database.</span></li>
+        </ul>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Mirador del Mar – Owners Portal</p>
+  </footer>
+</body>
+</html>

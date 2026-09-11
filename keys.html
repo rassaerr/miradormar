@@ -2,7 +2,7 @@
 <html lang="en" class="notranslate">
 <head>
   <meta charset="UTF-8" />
-  <title>Keys – Mirador del Mar</title>
+  <title>Keys &amp; Access – Mirador del Mar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="google" content="notranslate" />
 
@@ -30,7 +30,8 @@
       <a href="emergency.html" class="nav-emergency" data-i18n="nav_emergency">Emergency</a>
       <a href="insurance.html" data-i18n="nav_insurance">Insurance</a>
       <a href="documents.html" data-i18n="nav_documents">Documents</a>
-      <a href="keys.html" data-i18n="nav_keys">Technical Room Keys</a>
+      <a href="keys.html" class="active" data-i18n="nav_keys">Keys &amp; Access</a>
+      <a href="garage.html" data-i18n="nav_garage">Garage &amp; Gate</a>
       <a href="electricity.html" data-i18n="nav_electricity">Electricity</a>
       <a href="water.html" data-i18n="nav_water">Water</a>
       <a href="internet.html" data-i18n="nav_internet">Internet</a>
@@ -50,59 +51,72 @@
   </header>
 
   <main>
-    <section id="keys">
-
-      <!-- CLEAN locksmith block (NO RED) -->
-      <div class="key-category">
-        <h2 data-i18n="keys_locksmith_title">Local Locksmith (24h)</h2>
-        <ul>
-          <li data-i18n="keys_locksmith_name"><strong>Muñoz Cerrajeros</strong></li>
-          <li data-i18n="keys_locksmith_phone"><strong>Phone:</strong> +34 622 68 68 77</li>
-          <li data-i18n="keys_locksmith_email"><strong>Email:</strong> munozcerrajeros@gmail.com</li>
-          <li data-i18n="keys_locksmith_hours"><strong>Service:</strong> 24h / 7</li>
-        </ul>
-      </div>
-
-      <h2 data-i18n="keys_title">Technical Room Keys</h2>
-      <p data-i18n="keys_text">Overview of keys and access points for the technical rooms of Mirador del Mar.</p>
-
-      <div class="key-category">
-        <h3 data-i18n="keys_elec_title">Electricity Room</h3>
-        <ul>
-          <li data-i18n="keys_elec_loc">Location: Ground floor, next to the main entrance</li>
-          <li data-i18n="keys_elec_holder">Key Holder: Building Manager</li>
-          <li data-i18n="keys_elec_purpose">Purpose: Main electrical panels, breakers, meter access</li>
-        </ul>
-      </div>
-
-      <div class="key-category">
-        <h3 data-i18n="keys_water_title">Water Room</h3>
-        <ul>
-          <li data-i18n="keys_water_loc">Location: Basement level</li>
-          <li data-i18n="keys_water_holder">Key Holder: Building Manager</li>
-          <li data-i18n="keys_water_purpose">Purpose: Main water valves, pressure system, meters</li>
-        </ul>
-      </div>
-
-      <div class="key-category">
-        <h3 data-i18n="keys_tel_title">Communications / Telecom Room</h3>
-        <ul>
-          <li data-i18n="keys_tel_loc">Location: First floor service corridor</li>
-          <li data-i18n="keys_tel_holder">Key Holder: Telecom provider + Building Manager</li>
-          <li data-i18n="keys_tel_purpose">Purpose: Fibre distribution, telephone lines, network equipment</li>
-        </ul>
-      </div>
-
-      <div class="key-category">
-        <h3 data-i18n="keys_maint_title">General Maintenance Room</h3>
-        <ul>
-          <li data-i18n="keys_maint_loc">Location: Parking level</li>
-          <li data-i18n="keys_maint_holder">Key Holder: Maintenance company</li>
-          <li data-i18n="keys_maint_purpose">Purpose: Tools, cleaning supplies, shared equipment</li>
-        </ul>
-      </div>
-
+    <section class="page-header">
+      <h2 data-i18n="keys_page_title">Keys &amp; Access</h2>
+      <p data-i18n="keys_page_subtitle">Emergency contacts, locksmith details, and locations of technical cabinets and key holders.</p>
     </section>
+
+    <div class="content-container">
+
+      <!-- SECTION 1: CONTACTS -->
+      <section class="info-card">
+        <h3 data-i18n="keys_contacts_title">1. Key &amp; Locksmith Contacts</h3>
+        
+        <div class="key-category">
+          <h4 data-i18n="keys_locksmith_title">24h Local Locksmith (Vera)</h4>
+          <ul>
+            <li data-i18n="keys_locksmith_name"><strong>Muñoz Cerrajeros</strong></li>
+            <li data-i18n="keys_locksmith_phone"><strong>Phone:</strong> +34 622 68 68 77</li>
+            <li data-i18n="keys_locksmith_whatsapp"><strong>WhatsApp:</strong> +34 622 68 68 77</li>
+            <li data-i18n="keys_locksmith_email"><strong>Email:</strong> munozcerrajeros@gmail.com</li>
+            <li data-i18n="keys_locksmith_hours"><strong>Service:</strong> 24/7 Emergency Service</li>
+          </ul>
+        </div>
+
+        <div class="key-category">
+          <h4 data-i18n="keys_manager_title">Property Management &amp; Technical Key Holders</h4>
+          <ul>
+            <li data-i18n="keys_manager_name"><strong>Building Management (Vera)</strong></li>
+            <li data-i18n="keys_manager_contact_rudi">Key Holder (App 3B - Rudi): +32 488 421 402</li>
+            <li data-i18n="keys_manager_contact_francisca">Key Holder (App 3A/4A - Francisca): +34 677 549 202 (WhatsApp only)</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION 2: TECHNICAL CABINETS -->
+      <section class="info-card">
+        <h3 data-i18n="keys_tech_title">2. Technical Cabinets &amp; Infrastructure</h3>
+        <p data-i18n="keys_tech_intro">Exact locations and key access for all building technical systems.</p>
+
+        <div class="key-category">
+          <h4 data-i18n="keys_elec_title">Main Electricity Cabinet</h4>
+          <ul>
+            <li data-i18n="keys_elec_loc"><strong>Location:</strong> Outdoor, located at the entrance to the underground car park on the right-hand side.</li>
+            <li data-i18n="keys_elec_holder"><strong>Key Holder:</strong> Key safe / Property Manager / Utility company.</li>
+            <li data-i18n="keys_elec_purpose"><strong>Purpose:</strong> Main electrical panels, smart digital utility meters, and general circuit breakers.</li>
+          </ul>
+        </div>
+
+        <div class="key-category">
+          <h4 data-i18n="keys_water_title">Main Water Cabinet</h4>
+          <ul>
+            <li data-i18n="keys_water_loc"><strong>Location:</strong> Outdoor, located at the entrance to the underground car park on the left-hand side.</li>
+            <li data-i18n="keys_water_holder"><strong>Key Holder:</strong> Key safe / Property Manager / Galasa technicians.</li>
+            <li data-i18n="keys_water_purpose"><strong>Purpose:</strong> Main blue isolation valve, individual apartment meters (1A-4D), communal area meter ('14 LOCAL'), and pool supply valve.</li>
+          </ul>
+        </div>
+
+        <div class="key-category">
+          <h4 data-i18n="keys_tel_title">Telecommunications Room (RITI)</h4>
+          <ul>
+            <li data-i18n="keys_tel_loc"><strong>Location:</strong> Back / far end of the underground car park (basement level -1).</li>
+            <li data-i18n="keys_tel_holder"><strong>Key Holder:</strong> Rudi (App 3B) / Francisca (App 3A/4A) / Telecom installer.</li>
+            <li data-i18n="keys_tel_purpose"><strong>Purpose:</strong> Main fibre distribution splitters (Avanza 1:8), TV amplifiers, and telecom network risers.</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
   </main>
 
   <footer>
