@@ -1,13 +1,17 @@
-// Zorg dat het globale object direct correct bestaat en bewaard blijft
 if (!window.translations) {
   window.translations = {};
   console.log("[i18n-DEBUG] Created global window.translations object.");
 }
 
+const MODULES = [
+  'about', 'contacts', 'documents', 'electricity', 
+  'emergency', 'garage', 'index', 'insurance', 
+  'internet', 'keys', 'maintenance', 'water'
+];
+
 function getLanguage() {
   console.log("[i18n-DEBUG] --- Step 1: Determining current language ---");
 
-  // 1. Prioriteit: Staat er een parameter in de URL? (?lang=en) -> Hoogste wet
   const urlParams = new URLSearchParams(window.location.search);
   const urlLang = urlParams.get("lang");
   if (urlLang) {
@@ -16,7 +20,6 @@ function getLanguage() {
     return urlLang;
   }
 
-  // 2. Prioriteit: Forceer ALTIJD Spaans (es) bij opstarten als er geen URL-parameter is!
   console.log("[i18n-DEBUG] No parameter in URL. Forcing default startup to 'es' (Spanish).");
   try { localStorage.setItem("portal_lang", "es"); } catch(e){}
   return "es";
@@ -30,8 +33,6 @@ function updateNavLinks(lang) {
     const href = link.getAttribute("href");
     
     if (href && (href.endsWith(".html") || href.includes(".html?"))) {
-      const oldHref = href;
-      // FIX: Pak expliciet het EERSTE element [0] om de pure bestandsnaam te krijgen (zonder array-rommel)
       const pageBase = href.split("?")[0]; 
       const newHref = pageBase + "?lang=" + lang;
       
@@ -44,49 +45,70 @@ function updateNavLinks(lang) {
 
 function applyTranslations(lang) {
   console.log("[i18n-DEBUG] --- Step 3: Applying DOM Translations ---");
-  
-  const dict = window.translations[lang] || window.translations["es"] || window.translations["en"];
-  if (!dict) {
-    console.error("[i18n-DEBUG] CRITICAL ERROR: No translation dictionaries available for: " + lang);
-    return;
-  }
 
   const elements = document.querySelectorAll("[data-i18n]");
   let updatedCount = 0;
 
   elements.forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    if (dict[key] !== undefined) {
-      // FIX: Gebruik innerHTML zodat <strong> en <a> tags correct worden gerenderd
-      el.innerHTML = dict[key];
+    const dataKey = el.getAttribute("data-i18n");
+    let text = undefined;
+
+    if (dataKey.includes(':')) {
+      const parts = dataKey.split(':');
+      const baseName = parts[0];
+      const key = parts.slice(1).join(':');
+      
+      if (window.translations[baseName] && window.translations[baseName][key] !== undefined) {
+        text = window.translations[baseName][key];
+      }
+    } else {
+      for (const mod of MODULES) {
+        if (window.translations[mod] && window.translations[mod][dataKey] !== undefined) {
+          text = window.translations[mod][dataKey];
+          break;
+        }
+      }
+    }
+
+    if (text !== undefined) {
+      el.innerHTML = text;
       updatedCount++;
     }
   });
+
   console.log("[i18n-DEBUG] Translation finish: " + updatedCount + " elements updated.");
 }
+
 function loadLanguageScript(lang, callback) {
-  console.log("[i18n-DEBUG] --- Step 2: Loading Language Asset File ---");
+  console.log("[i18n-DEBUG] --- Step 2: Loading Modular Language Asset Files for: " + lang + " ---");
 
-  if (window.translations[lang] && Object.keys(window.translations[lang]).length > 0) {
-    callback();
-    return;
-  }
+  let loadedCount = 0;
+  const totalModules = MODULES.length;
+  const timestamp = Date.now();
 
-  const scriptPath = "assets/js/lang/" + lang + ".js?v=" + Date.now();
-  const script = document.createElement("script");
-  script.src = scriptPath;
+  MODULES.forEach(mod => {
+    const scriptPath = `assets/js/lang/${mod}.${lang}.js?v=${timestamp}`;
+    const script = document.createElement("script");
+    script.src = scriptPath;
 
-  script.onload = () => {
-    console.log("[i18n-DEBUG] Network load SUCCESS: '" + scriptPath + "'");
-    callback();
-  };
+    script.onload = () => {
+      loadedCount++;
+      if (loadedCount === totalModules) {
+        console.log("[i18n-DEBUG] All modular files loaded successfully for: " + lang);
+        callback();
+      }
+    };
 
-  script.onerror = () => {
-    console.error("[i18n-DEBUG] Network load FAILED for: " + scriptPath);
-    if (lang !== "es") { loadLanguageScript("es", callback); }
-  };
+    script.onerror = () => {
+      console.warn("[i18n-DEBUG] Warning: Could not load module file: " + scriptPath);
+      loadedCount++;
+      if (loadedCount === totalModules) {
+        callback();
+      }
+    };
 
-  document.head.appendChild(script);
+    document.head.appendChild(script);
+  });
 }
 
 function setLanguage(lang) {

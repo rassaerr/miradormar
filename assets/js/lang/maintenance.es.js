@@ -1,0 +1,23 @@
+window.translations = window.translations || {};
+window.translations.maintenance = {
+  "maintenance_cleaning": "Calendario de limpieza: (Añadir detalles)",
+  "maintenance_company": "Empresa responsable: (Añadir nombre)",
+  "maintenance_garden": "Mantenimiento del jardín: (Añadir contratista)",
+  "maintenance_loc": "Sala de mantenimiento: (Añadir detalles)",
+  "maintenance_pool": "Mantenimiento de piscinas: José +34 691 66 22 67",
+  "maintenance_text": "Información general sobre el mantenimiento del Mirador del Mar.",
+  "maintenance_title": "Mantenimiento",
+  "nav_about": "Acerca de",
+  "nav_contacts": "Contactos",
+  "nav_documents": "Documentos",
+  "nav_electricity": "Electricidad",
+  "nav_emergency": "Emergencia",
+  "nav_garage": "Garaje y puerta",
+  "nav_home": "Inicio",
+  "nav_insurance": "Seguros",
+  "nav_internet": "Internet",
+  "nav_keys": "Claves técnicas de la sala",
+  "nav_maintenance": "Mantenimiento",
+  "nav_water": "Agua",
+  "title": "Mirador del Mar – Palomares"
+};

@@ -1,0 +1,28 @@
+window.translations = window.translations || {};
+window.translations.contacts = {
+  "contacts_admin_email_label": "E-mail:",
+  "contacts_admin_name": "Aguamarina Fincas Administracion",
+  "contacts_admin_phone_label": "Telefoon:",
+  "contacts_admin_region": "Levante Almeriense (Palomares, Vera, Garrucha, Mojácar)",
+  "contacts_admin_region_label": "Servicegebied:",
+  "contacts_admin_section_title": "1. Vastgoedbeheer",
+  "contacts_keyholders_section_title": "2. Sleutelbeheerders en beheer ter plaatse",
+  "contacts_subtitle": "Professioneel beheer, sleutelbeheerders en lokale contactpersonen voor noodgevallen.",
+  "contacts_title": "Belangrijke contactpersonen",
+  "keys_manager_contact_francisca": "Sleutelbeheerder alle kamers/alle kasten (App 3A/4A - Francisca): +34 677 549 202 (alleen via WhatsApp)",
+  "keys_manager_contact_rudi": "Contactpersoon telecomruimte (App 3B - Rudi): +32 488 421 402",
+  "nav_about": "Over",
+  "nav_contacts": "Contactpersonen",
+  "nav_documents": "Documenten",
+  "nav_electricity": "Elektriciteit",
+  "nav_emergency": "Noodsituatie",
+  "nav_garage": "Garage &amp; Poort",
+  "nav_home": "Home",
+  "nav_insurance": "Verzekering",
+  "nav_internet": "Internet",
+  "nav_keys": "Sleutels voor technische ruimtes",
+  "nav_maintenance": "Onderhoud",
+  "nav_water": "Water",
+  "title": "Mirador del Mar – Palomares",
+  "keys_manager_contact_test": "Test ALLEEN 333"
+};

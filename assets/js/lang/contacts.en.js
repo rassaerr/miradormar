@@ -1,0 +1,27 @@
+window.translations = window.translations || {};
+window.translations.contacts = {
+  "title": "Mirador del Mar – Palomares",
+  "nav_home": "Home",
+  "nav_emergency": "Emergency",
+  "nav_insurance": "Insurance",
+  "nav_documents": "Documents",
+  "nav_keys": "Technical Room Keys",
+  "nav_garage": "Garage & Gate",
+  "nav_electricity": "Electricity",
+  "nav_water": "Water",
+  "nav_internet": "Internet",
+  "nav_maintenance": "Maintenance",
+  "nav_contacts": "Contacts",
+  "nav_about": "About",
+  "contacts_title": "Important Contacts",
+  "contacts_subtitle": "Professional administration, key holders, and local emergency contacts.",
+  "contacts_admin_section_title": "1. Property Administration",
+  "contacts_admin_name": "Aguamarina Fincas Administracion",
+  "contacts_admin_email_label": "Email:",
+  "contacts_admin_phone_label": "Phone:",
+  "contacts_admin_region_label": "Service Region:",
+  "contacts_admin_region": "Levante Almeriense (Palomares, Vera, Garrucha, Mojácar)",
+  "contacts_keyholders_section_title": "2. On-Site Key Holders & Management",
+  "keys_manager_contact_rudi": "Key Holder Telecom Room(App 3B - Rudi): +32 488 421 402",
+  "keys_manager_contact_francisca": "Key Holder All Rooms/ All Cabinets (App 3A/4A - Francisca): +34 677 549 202 (WhatsApp only)"
+};

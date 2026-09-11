@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<!-- Voorkom dat browsers de pagina automatisch forceren naar een andere taal -->
 <html lang="en" class="notranslate">
 <head>
   <meta charset="UTF-8" />
   <title>Internet – Mirador del Mar</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  
-  <!-- Blokkeer automatische pop-ups van Google Translate -->
   <meta name="google" content="notranslate" />
 
   <script>
     const version = Date.now();
-
-    // Dynamisch laden van de stylesheet
     const css = document.createElement("link");
     css.rel = "stylesheet";
     css.href = "assets/css/style.css?v=" + version;
     document.head.appendChild(css);
 
-    // Dynamisch laden van het JavaScript-bestand
     const script = document.createElement("script");
     script.src = "assets/js/main.js?v=" + version;
     script.defer = true;
@@ -34,7 +28,7 @@
       <a href="insurance.html" data-i18n="nav_insurance">Insurance</a>
       <a href="documents.html" data-i18n="nav_documents">Documents</a>
       <a href="keys.html" data-i18n="nav_keys">Technical Room Keys</a>
-      <a href="garage.html" class="active" data-i18n="nav_garage">Garage &amp; Gate</a>
+      <a href="garage.html" data-i18n="nav_garage">Garage &amp; Gate</a>
       <a href="electricity.html" data-i18n="nav_electricity">Electricity</a>
       <a href="water.html" data-i18n="nav_water">Water</a>
       <a href="internet.html" data-i18n="nav_internet">Internet</a>
@@ -54,10 +48,9 @@
 
   <main>
     <section id="internet">
-      <h2 data-i18n="internet_title">Internet & Telecom</h2>
+      <h2 data-i18n="internet_title">Internet &amp; Telecom</h2>
       <p data-i18n="internet_text">Information about internet infrastructure, fiber connections, routers, and provider details.</p>
       
-      <!-- Provider & Algemene specificaties -->
       <div class="tech-card">
         <h3 data-i18n="internet_provider_title">Provider Details</h3>
         <ul class="notranslate">
@@ -73,37 +66,19 @@
         </ul>
       </div>
 
-      <!-- Handleiding voor de Technicus -->
       <div class="technician-guide">
         <h3 data-i18n="internet_guide_title">Fiber Installation Guide (For Technicians)</h3>
         <p data-i18n="internet_guide_intro">Follow these steps and references for deploying a new subscriber fiber line in the building:</p>
         
         <ol>
-          <li data-i18n="internet_step_1">
-            <strong>Accessing the Main Technical Room:</strong><br>
-            The fibers enter the building at the end of the underground garage (-1 floor). The room is locked. 
-            Keys are held by Rudi (App 3B, Mobile: +32488421402) or Francisca (App 3A|4A, WhatsApp only: +34677549202).
-          </li>
-          <li data-i18n="internet_step_2">
-            <strong>Connecting to the Splitter Box:</strong><br>
-            On the right wall of the technical room, the fiber splitter boxes are located. Avanza Fibra utilizes a 1:8 splitter box. (See Photo 1 & 2)
-          </li>
-          <li data-i18n="internet_step_3">
-            <strong>Routing from the Floor Cabinets:</strong><br>
-            The easiest deployment path starts at the technical cabinet located on each floor (behind the white square door on the left wall next to the elevator). Note: The cabinet doors on the 2nd and 3rd floors are currently broken. Once repaired, the key will be located in the new keybox in the underground garage.
-          </li>
-          <li data-i18n="internet_step_4">
-            <strong>Pulling the Cable Downward:</strong><br>
-            The technician must route the fiber patch cable from the floor cabinet down to the -1 garage floor. Open the white box on the ceiling located to the left of the elevator (See Photo 4). From this point, the cable path directly enters the main technical room containing the splitter boxes.
-          </li>
-          <li data-i18n="internet_step_5">
-            <strong>Connecting inside the Apartment:</strong><br>
-            The subscriber-side end of the fiber goes directly into the apartment. It enters via the hidden technical cabinet situated close to the apartment's front door (See Photo 3).
-          </li>
+          <li data-i18n="internet_step_1"><strong>Accessing the Main Technical Room:</strong><br>The fibers enter the building at the end of the underground garage (-1 floor). The room is locked. Keys are held by Rudi (App 3B, Mobile: +32488421402) or Francisca (App 3A|4A, WhatsApp only: +34677549202).</li>
+          <li data-i18n="internet_step_2"><strong>Connecting to the Splitter Box:</strong><br>On the right wall of the technical room, the fiber splitter boxes are located. Avanza Fibra utilizes a 1:8 splitter box. (See Photo 1 &amp; 2)</li>
+          <li data-i18n="internet_step_3"><strong>Routing from the Floor Cabinets:</strong><br>The easiest deployment path starts at the technical cabinet located on each floor (behind the white square door on the left wall next to the elevator). Note: The cabinet doors on the 2nd and 3rd floors are currently broken. Once repaired, the key will be located in the new keybox in the underground garage.</li>
+          <li data-i18n="internet_step_4"><strong>Pulling the Cable Downward:</strong><br>The technician must route the fiber patch cable from the floor cabinet down to the -1 garage floor. Open the white box on the ceiling located to the left of the elevator (See Photo 4). From this point, the cable path directly enters the main technical room containing the splitter boxes.</li>
+          <li data-i18n="internet_step_5"><strong>Connecting inside the Apartment:</strong><br>The subscriber-side end of the fiber goes directly into the apartment. It enters via the hidden technical cabinet situated close to the apartment's front door (See Photo 3).</li>
         </ol>
       </div>
 
-      <!-- Fotogalerij van de installatie (Gecorrigeerde versie) -->
       <div class="photo-gallery">
         <h3 data-i18n="internet_gallery_title">Installation Reference Photos</h3>
         <div class="gallery-grid">
@@ -120,19 +95,17 @@
 
           <div class="gallery-item">
             <img src="img/technical_cabinet_each_floor_pass_through.jpeg" alt="Floor Pass-through Cabinet" />
-            <p><strong data-i18n="internet_photo_lbl_3">Photo 3:</strong> <span data-i18n="internet_photo_3">Floor Technical Cabinet & Apartment Entry Point</span></p>
+            <p><strong data-i18n="internet_photo_lbl_3">Photo 3:</strong> <span data-i18n="internet_photo_3">Floor Technical Cabinet &amp; Apartment Entry Point</span></p>
           </div>
 
           <div class="gallery-item">
             <img src="img/fiber_at_ceiling_of_garage_at_elevator.jpeg" alt="Garage Ceiling Distribution" />
-            <!-- FIX: Geen notranslate, gesplitste labels en schone data-i18n tags voor foto 4 -->
             <p><strong data-i18n="internet_photo_lbl_4">Photo 4:</strong> <span data-i18n="internet_photo_4">White Distribution Box on Garage Ceiling (-1, near Elevator)</span></p>
           </div>
 
         </div>
       </div>
 
-      </div>
     </section>
   </main>
 

@@ -1,0 +1,28 @@
+window.translations = window.translations || {};
+window.translations.contacts = {
+  "contacts_admin_email_label": "Correo electrónico:",
+  "contacts_admin_name": "Aguamarina Fincas Administración",
+  "contacts_admin_phone_label": "Teléfono:",
+  "contacts_admin_region": "Levante Almeriense (Palomares, Vera, Garrucha, Mojácar)",
+  "contacts_admin_region_label": "Área de cobertura:",
+  "contacts_admin_section_title": "1. Administración de inmuebles",
+  "contacts_keyholders_section_title": "2. Responsables de las llaves y gestión in situ",
+  "contacts_subtitle": "Administración profesional, personas encargadas de las llaves y contactos locales para emergencias.",
+  "contacts_title": "Contactos importantes",
+  "keys_manager_contact_francisca": "Responsable de las llaves de todas las habitaciones y todos los armarios (App 3A/4A - Francisca): +34 677 549 202 (solo WhatsApp)",
+  "keys_manager_contact_rudi": "Responsable de las llaves de la sala de telecomunicaciones (Anexo 3B - Rudi): +32 488 421 402",
+  "nav_about": "Acerca de",
+  "nav_contacts": "Contactos",
+  "nav_documents": "Documentos",
+  "nav_electricity": "Electricidad",
+  "nav_emergency": "Emergencia",
+  "nav_garage": "Garaje y puerta",
+  "nav_home": "Inicio",
+  "nav_insurance": "Seguros",
+  "nav_internet": "Internet",
+  "nav_keys": "Claves técnicas de la sala",
+  "nav_maintenance": "Mantenimiento",
+  "nav_water": "Agua",
+  "title": "Mirador del Mar – Palomares",
+  "keys_manager_contact_test": "Prueba SOLO 333"
+};

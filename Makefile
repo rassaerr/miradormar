@@ -1,13 +1,24 @@
-.PHONY: all sync export
+# Makefile voor Mirador del Mar vertaalpipeline
 
-all: sync
+.PHONY: all scan sync export help
 
-export:
-	node export-to-csv.js
-	@if [ -f translations-master.csv ]; then \
-		mv translations-master.csv translations-master.csv.bak; \
-	fi
-	mv translations_for_sheets.csv translations-master.csv
+all: scan sync export
+
+scan:
+	@echo "[INFO] Scannen van HTML en genereren/updaten van modulaire taalbestanden..."
+	node html-to-lang.js en
 
 sync:
-	node sync-from-csv.js
+	@echo "[INFO] Delta-synchronisatie via cache en vertalen via DeepL..."
+	node sync-from-files.js
+
+export:
+	@echo "[INFO] Exporteren van actuele vertalingen naar translations_for_sheets.csv (Backup/Overzicht)..."
+	node export-to-csv.js
+
+help:
+	@echo "Beschikbare commando's:"
+	@echo "  make scan   - Genereert basisbestanden en placeholders in alle .js bestanden vanuit HTML"
+	@echo "  make sync   - Detecteert gewijzigde/nieuwe Engelse bronteksten en vertaalt via DeepL"
+	@echo "  make export - Maakt een overzichtelijke CSV-dump van alle huidige .js bestanden"
+	@echo "  make all    - Voert de complete pipeline uit: scan -> sync -> export"
