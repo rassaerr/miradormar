@@ -35,12 +35,12 @@
       <a href="insurance.html" data-i18n="nav_insurance">Insurance</a>
       <a href="documents.html" data-i18n="nav_documents">Documents</a>
       <a href="keys.html" data-i18n="nav_keys">Technical Room Keys</a>
-      <a href="garage.html" class="active" data-i18n="nav_garage">Garage &amp; Gate</a>
+      <a href="garage.html" data-i18n="nav_garage">Garage &amp; Gate</a>
       <a href="electricity.html" data-i18n="nav_electricity">Electricity</a>
       <a href="water.html" data-i18n="nav_water">Water</a>
       <a href="internet.html" data-i18n="nav_internet">Internet</a>
       <a href="maintenance.html" data-i18n="nav_maintenance">Maintenance</a>
-      <a href="contacts.html" data-i18n="nav_contacts">Contacts</a>
+      <a href="contacts.html" class="active" data-i18n="nav_contacts">Contacts</a>
       <a href="about.html" data-i18n="nav_about">About</a>
     </nav>
     <div class="lang-select notranslate">
@@ -52,15 +52,42 @@
       </select>
     </div>
   </header>
+
   <main>
-    <section id="contacts">
+    <section class="page-header">
       <h2 data-i18n="contacts_title">Important Contacts</h2>
-      <ul>
-        <li data-i18n="contacts_manager">Building Manager: manager@example.com</li>
-        <li data-i18n="contacts_emergency">Emergency: +34 123 456 789</li>
-      </ul>
+      <p data-i18n="contacts_subtitle">Professional administration, key holders, and local emergency contacts.</p>
     </section>
+
+    <div class="content-container">
+
+      <!-- SECTION 1: ADMINISTRATION -->
+      <section class="info-card">
+        <h3 data-i18n="contacts_admin_section_title">1. Property Administration</h3>
+        <div class="key-category">
+          <h4 data-i18n="contacts_admin_name">Aguamarina Fincas Administracion</h4>
+          <ul>
+            <li><strong data-i18n="contacts_admin_email_label">Email:</strong> <a href="mailto:adm.aguamarinafincas@gmail.com">adm.aguamarinafincas@gmail.com</a></li>
+            <li><strong data-i18n="contacts_admin_phone_label">Phone:</strong> +34 950 92 80 98</li>
+            <li><strong data-i18n="contacts_admin_region_label">Service Region:</strong> <span data-i18n="contacts_admin_region">Levante Almeriense (Palomares, Vera, Garrucha, Mojácar)</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION 2: KEY HOLDERS & ON-SITE MANAGEMENT -->
+      <section class="info-card">
+        <h3 data-i18n="contacts_keyholders_section_title">2. On-Site Key Holders &amp; Management</h3>
+        <div class="key-category">
+          <ul>
+            <li data-i18n="keys_manager_contact_rudi">Key Holder Telecom Room(App 3B - Rudi): +32 488 421 402</li>
+            <li data-i18n="keys_manager_contact_francisca">Key Holder All Rooms/ All Cabinets (App 3A/4A - Francisca): +34 677 549 202 (WhatsApp only)</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
   </main>
+
   <footer><p>&copy; Mirador del Mar – Owners Portal</p></footer>
 </body>
 </html>
