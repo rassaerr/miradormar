@@ -42,7 +42,7 @@ window.translations.garage = {
   "fob_types_title": "Official Key Fob Models",
   "fob_types_desc": "The Mirador del Mar gate system is compatible with two official Nice radio transmitter models:",
   "fob_type_1_desc": "Nice Flor-S: The classic rectangular dark blue or black transmitter, typically featuring 2 control buttons.",
-  "fob_type_2_desc": "Nice ERA INTI: The modern, compact square transmitter, available in various casing colours.",
+  "fob_type_2_desc": "Nice ERA INTI: The modern, compact square transmitter.",
   "fob_battery_title": "Battery Replacement Procedure",
   "fob_battery_desc": "If your transmitter's LED indicator appears dim or fails to illuminate when a button is pressed, you will need to replace the internal coin cell battery:",
   "fob_bat_step1": "Carefully pry open the plastic casing by inserting a coin or a small flathead precision screwdriver along the side seam.",

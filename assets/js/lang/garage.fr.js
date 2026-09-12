@@ -21,7 +21,7 @@ window.translations.garage = {
   "fob_title": "3. Télécommandes, maintenance et autorisation",
   "fob_trouble_title": "Dépannage des problèmes de signal",
   "fob_type_1_desc": "Nice Flor-S : l&#x27;émetteur classique de forme rectangulaire, de couleur bleu foncé ou noir, généralement équipé de deux boutons de commande.",
-  "fob_type_2_desc": "Nice ERA INTI : un émetteur carré, moderne et compact, disponible dans différentes couleurs de boîtier.",
+  "fob_type_2_desc": "Nice ERA INTI : l&#x27;émetteur carré moderne et compact.",
   "fob_types_desc": "Le système de portail « Mirador del Mar » est compatible avec deux modèles officiels d&#x27;émetteurs radio Nice :",
   "fob_types_title": "Modèles officiels de porte-clés",
   "garage_gallery_title": "Référence des composants visuels",

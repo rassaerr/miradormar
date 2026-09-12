@@ -21,7 +21,7 @@ window.translations.garage = {
   "fob_title": "3. Mandos a distancia, mantenimiento y autorización",
   "fob_trouble_title": "Solución de problemas relacionados con la señal",
   "fob_type_1_desc": "Nice Flor-S: El clásico transmisor rectangular de color azul oscuro o negro, que suele contar con dos botones de control.",
-  "fob_type_2_desc": "Nice ERA INTI: el transmisor cuadrado, moderno y compacto, disponible en varios colores de carcasa.",
+  "fob_type_2_desc": "Nice ERA INTI: el transmisor cuadrado, moderno y compacto.",
   "fob_types_desc": "El sistema de puerta «Mirador del Mar» es compatible con dos modelos oficiales de transmisores por radio de Nice:",
   "fob_types_title": "Modelos oficiales de mandos a distancia",
   "garage_gallery_title": "Referencia de componentes visuales",

@@ -21,7 +21,7 @@ window.translations.garage = {
   "fob_title": "3. Sleutelhangers, onderhoud en autorisatie",
   "fob_trouble_title": "Problemen met het signaal oplossen",
   "fob_type_1_desc": "Nice Flor-S: De klassieke rechthoekige donkerblauwe of zwarte zender, meestal voorzien van 2 bedieningsknoppen.",
-  "fob_type_2_desc": "Nice ERA INTI: de moderne, compacte vierkante zender, verkrijgbaar in verschillende behuizingskleuren.",
+  "fob_type_2_desc": "Nice ERA INTI: de moderne, compacte vierkante zender.",
   "fob_types_desc": "Het Mirador del Mar-toegangssysteem is compatibel met twee officiële modellen radiozenders van Nice:",
   "fob_types_title": "Officiële modellen van sleutelhangers",
   "garage_gallery_title": "Referentie voor visuele componenten",
