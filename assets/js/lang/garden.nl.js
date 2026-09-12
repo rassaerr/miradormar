@@ -139,7 +139,7 @@ window.translations.garden = {
   "photo_7_label": "Foto 7:",
   "plant_hibiscus": "Hibiscus rosa-sinensis",
   "plant_hibiscus_title": "Hibiscus rosa-sinensis (Chinese hibiscus)",
-  "plant_hibiscus_featured": "Foto 7, foto 8 en foto 16",
+  "plant_hibiscus_featured": "Foto 6, Foto 7, Foto 8 en Foto 16",
   "plant_hibiscus_chars": "Een elegante struik die tegen een stam is geleid, met glanzende, donkergroene bladeren en levendige, trompetvormige bloemen (geel, roze of rood).",
   "plant_hibiscus_water": "Normaal. Heeft tijdens hete zomerweken regelmatig water nodig om te voorkomen dat de knoppen afvallen; houd de grond licht vochtig.",
   "plant_hibiscus_sun": "Een zonnige, beschutte standplaats is nodig voor een rijke bloei.",

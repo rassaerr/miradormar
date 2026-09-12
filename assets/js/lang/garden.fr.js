@@ -139,7 +139,7 @@ window.translations.garden = {
   "photo_7_label": "Photo 7 :",
   "plant_hibiscus": "Hibiscus rosa-sinensis",
   "plant_hibiscus_title": "Hibiscus rosa-sinensis (hibiscus chinois)",
-  "plant_hibiscus_featured": "Photo 7, Photo 8 et Photo 16",
+  "plant_hibiscus_featured": "Photo 6, Photo 7, Photo 8 et Photo 16",
   "plant_hibiscus_chars": "Arbuste élégant formé en arbre à tronc droit, aux feuilles vert foncé brillantes et aux fleurs éclatantes en forme de trompette (jaunes, roses ou rouges).",
   "plant_hibiscus_water": "Régulier. Nécessite un arrosage régulier pendant les semaines chaudes de l&#x27;été pour éviter la chute des bourgeons ; maintenez le sol légèrement humide.",
   "plant_hibiscus_sun": "Un emplacement ensoleillé et à l&#x27;abri est nécessaire pour une floraison abondante.",

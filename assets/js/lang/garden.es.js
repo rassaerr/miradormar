@@ -139,7 +139,7 @@ window.translations.garden = {
   "photo_7_label": "Foto 7:",
   "plant_hibiscus": "Hibiscus rosa-sinensis",
   "plant_hibiscus_title": "Hibiscus rosa-sinensis (hibisco chino)",
-  "plant_hibiscus_featured": "Foto 7, foto 8 y foto 16",
+  "plant_hibiscus_featured": "Foto 6, Foto 7, Foto 8 y Foto 16",
   "plant_hibiscus_chars": "Elegante arbusto podado en forma de árbol de tronco alto, con hojas de color verde oscuro y brillante, y flores de colores vivos en forma de trompeta (amarillas, rosas o rojas).",
   "plant_hibiscus_water": "Regular. Requiere un riego constante durante las calurosas semanas de verano para evitar la caída de los capullos; mantén la tierra ligeramente húmeda.",
   "plant_hibiscus_sun": "Se requiere una ubicación soleada y protegida para garantizar una floración abundante.",

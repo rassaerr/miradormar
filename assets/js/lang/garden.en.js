@@ -53,7 +53,7 @@ window.translations.garden = {
   "photo_7_label": "Photo 7:",
   "plant_hibiscus": "Hibiscus rosa-sinensis",
   "plant_hibiscus_title": "Hibiscus rosa-sinensis (Chinese Hibiscus)",
-  "plant_hibiscus_featured": "Photo 7, Photo 8 & Photo 16",
+  "plant_hibiscus_featured": "Photo 6, Photo 7, Photo 8 & Photo 16",
   "plant_hibiscus_chars": "Elegant shrub trained on a standard trunk with glossy, dark green leaves and vibrant, trumpet-shaped blooms (yellow, pink, or red).",
   "plant_hibiscus_water": "Regular. Requires consistent moisture during hot summer weeks to prevent bud drop; keep soil lightly damp.",
   "plant_hibiscus_sun": "Sunny, sheltered location required for abundant flowering.",
