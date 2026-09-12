@@ -6,7 +6,7 @@ if (!window.translations) {
 const MODULES = [
   'about', 'contacts', 'documents', 'electricity', 
   'emergency', 'garage', 'index', 'insurance', 
-  'internet', 'keys', 'maintenance', 'water', 'elevator'
+  'internet', 'keys', 'maintenance', 'water', 'elevator', 'garden'
 ];
 
 function getLanguage() {

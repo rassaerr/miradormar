@@ -48,5 +48,6 @@ window.translations.elevator = {
   "elevator_photo_lbl_5": "Foto 5:",
   "elevator_photo_5": "Micrófono/altavoz del interfono integrado",
   "elevator_photo_lbl_6": "Foto 6:",
-  "elevator_photo_6": "Pantalla digital Otis e-View (450kg / 6 Pers)"
+  "elevator_photo_6": "Pantalla digital Otis e-View (450kg / 6 Pers)",
+  "nav_garden": "Jardinería y riego"
 };

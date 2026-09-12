@@ -34,5 +34,6 @@ window.translations.internet = {
   "nav_maintenance": "Mantenimiento",
   "nav_water": "Agua",
   "title": "Mirador del Mar – Palomares",
-  "nav_elevator": "Ascensor"
+  "nav_elevator": "Ascensor",
+  "nav_garden": "Jardinería y riego"
 };

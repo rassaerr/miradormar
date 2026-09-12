@@ -81,5 +81,6 @@ window.translations.water = {
   "water_boiler_reset_lbl": "Resetten van de thermische beveiliging:",
   "water_boiler_reset_text": "Als uw ketel na het herstel van de stroomtoevoer geen warmte meer produceert, maar er geen zichtbare lekken zijn, vervang het apparaat dan niet. In de meeste gevallen is de interne thermische veiligheidsschakelaar in werking getreden. Achter de onderste afdekplaat bevindt zich een rode knop waarmee u de schakelaar handmatig kunt resetten.",
   "water_boiler_danger_lbl": "Gevaar door 230 V-stroom:",
-  "water_boiler_danger_text": "De thermische resetknop bevindt zich vlak naast stroomvoerende aansluitingen. Verwijder de beschermkap nooit zelf. Neem via WhatsApp contact op met onze gecertificeerde lokale loodgieter op +34 666 70 19 80."
+  "water_boiler_danger_text": "De thermische resetknop bevindt zich vlak naast stroomvoerende aansluitingen. Verwijder de beschermkap nooit zelf. Neem via WhatsApp contact op met onze gecertificeerde lokale loodgieter op +34 666 70 19 80.",
+  "nav_garden": "Tuin &amp; Irrigatie"
 };

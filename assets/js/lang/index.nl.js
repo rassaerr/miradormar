@@ -27,5 +27,7 @@ window.translations.index = {
   "welcome_sub": "Kies hieronder een rubriek om informatie en documenten te bekijken.",
   "welcome_title": "Informatieportaal voor gebouwen",
   "nav_elevator": "Lift",
-  "card_elevator_desc": "Liftveiligheid, noodintercom, technische specificaties van Otis en deursensoren."
+  "card_elevator_desc": "Liftveiligheid, noodintercom, technische specificaties van Otis en deursensoren.",
+  "nav_garden": "Tuin &amp; Irrigatie",
+  "card_garden_desc": "De indeling van de gemeenschappelijke tuin, plantenbakken op het terras en automatische besproeiingsschema’s."
 };

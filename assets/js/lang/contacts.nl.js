@@ -25,5 +25,6 @@ window.translations.contacts = {
   "nav_water": "Water",
   "title": "Mirador del Mar – Palomares",
   "keys_manager_contact_test": "Test ALLEEN 333",
-  "nav_elevator": "Lift"
+  "nav_elevator": "Lift",
+  "nav_garden": "Tuin &amp; Irrigatie"
 };

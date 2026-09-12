@@ -27,5 +27,7 @@ window.translations.index = {
   "welcome_sub": "Selecciona una de las secciones siguientes para acceder a la información y a los documentos.",
   "welcome_title": "Portal de información sobre edificios",
   "nav_elevator": "Ascensor",
-  "card_elevator_desc": "Seguridad de los ascensores, intercomunicador de emergencia, especificaciones de Otis y sensores de puertas."
+  "card_elevator_desc": "Seguridad de los ascensores, intercomunicador de emergencia, especificaciones de Otis y sensores de puertas.",
+  "nav_garden": "Jardinería y riego",
+  "card_garden_desc": "Diseño de jardines comunitarios, jardineras para terrazas y programas de riego automático."
 };

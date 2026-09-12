@@ -11,6 +11,7 @@ window.translations.index = {
   "nav_electricity": "Electricity",
   "nav_water": "Water",
   "nav_internet": "Internet",
+  "nav_garden": "Garden & Irrigation",
   "nav_maintenance": "Maintenance",
   "nav_contacts": "Contacts",
   "nav_about": "About",
@@ -25,6 +26,7 @@ window.translations.index = {
   "card_electricity_desc": "Details regarding meters, consumer units and infrastructure.",
   "card_water_desc": "Details on mains supply, isolation valves and emergencies.",
   "card_internet_desc": "Details of network infrastructure, full fibre and routers.",
+  "card_garden_desc": "Communal garden layout, terrace planters, and automatic watering schedules.",
   "card_maintenance_desc": "General maintenance and cleaning information.",
   "card_contacts_desc": "Contact details for property management and emergencies.",
   "card_about_desc": "General portal information for property owners."

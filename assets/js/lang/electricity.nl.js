@@ -142,5 +142,6 @@ window.translations.electricity = {
   "nav_maintenance": "Onderhoud",
   "nav_water": "Water",
   "title": "Mirador del Mar – Palomares",
-  "nav_elevator": "Lift"
+  "nav_elevator": "Lift",
+  "nav_garden": "Tuin &amp; Irrigatie"
 };

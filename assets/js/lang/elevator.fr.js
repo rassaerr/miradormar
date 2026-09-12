@@ -48,5 +48,6 @@ window.translations.elevator = {
   "elevator_photo_lbl_5": "Photo 5 :",
   "elevator_photo_5": "Micro/haut-parleur de l'interphone intégré",
   "elevator_photo_lbl_6": "Photo 6 :",
-  "elevator_photo_6": "Écran numérique Otis e-View (450kg / 6 Pers)"
+  "elevator_photo_6": "Écran numérique Otis e-View (450kg / 6 Pers)",
+  "nav_garden": "Jardin et arrosage"
 };

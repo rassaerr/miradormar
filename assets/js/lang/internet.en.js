@@ -11,6 +11,7 @@ window.translations.internet = {
   "nav_electricity": "Electricity",
   "nav_water": "Water",
   "nav_internet": "Internet",
+  "nav_garden": "Garden & Irrigation",
   "nav_maintenance": "Maintenance",
   "nav_contacts": "Contacts",
   "nav_about": "About",

@@ -81,5 +81,6 @@ window.translations.water = {
   "water_boiler_reset_lbl": "Reinicio del interruptor térmico:",
   "water_boiler_reset_text": "Si la caldera no calienta una vez restablecido el suministro, pero no presenta fugas visibles, no sustituya la unidad. En la mayoría de los casos, se ha activado el interruptor térmico de seguridad interno. Detrás de la placa de cubierta inferior hay un botón rojo de reinicio manual.",
   "water_boiler_danger_lbl": "Riesgo eléctrico de 230 V:",
-  "water_boiler_danger_text": "El botón de reinicio térmico se encuentra junto a unos terminales eléctricos bajo tensión. No retires nunca la cubierta protectora por tu cuenta. Ponte en contacto con nuestro fontanero local certificado a través de WhatsApp en el +34 666 70 19 80."
+  "water_boiler_danger_text": "El botón de reinicio térmico se encuentra junto a unos terminales eléctricos bajo tensión. No retires nunca la cubierta protectora por tu cuenta. Ponte en contacto con nuestro fontanero local certificado a través de WhatsApp en el +34 666 70 19 80.",
+  "nav_garden": "Jardinería y riego"
 };

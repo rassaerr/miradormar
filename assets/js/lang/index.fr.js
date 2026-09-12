@@ -27,5 +27,7 @@ window.translations.index = {
   "welcome_sub": "Sélectionnez une rubrique ci-dessous pour accéder aux informations et aux documents.",
   "welcome_title": "Portail d&#x27;informations sur les bâtiments",
   "nav_elevator": "Ascenseur",
-  "card_elevator_desc": "Sécurité des ascenseurs, interphone d&#x27;urgence, caractéristiques techniques Otis et capteurs de porte."
+  "card_elevator_desc": "Sécurité des ascenseurs, interphone d&#x27;urgence, caractéristiques techniques Otis et capteurs de porte.",
+  "nav_garden": "Jardin et arrosage",
+  "card_garden_desc": "Aménagement du jardin commun, jardinières de terrasse et programmes d&#x27;arrosage automatique."
 };

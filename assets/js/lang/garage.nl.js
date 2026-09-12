@@ -69,5 +69,6 @@ window.translations.garage = {
   "nav_elevator": "Lift",
   "garage_photo_1_lbl": "Foto 1:",
   "garage_photo_2_lbl": "Foto 2:",
-  "garage_photo_3_lbl": "Foto 3:"
+  "garage_photo_3_lbl": "Foto 3:",
+  "nav_garden": "Tuin &amp; Irrigatie"
 };

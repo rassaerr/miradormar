@@ -25,5 +25,6 @@ window.translations.contacts = {
   "nav_water": "Agua",
   "title": "Mirador del Mar – Palomares",
   "keys_manager_contact_test": "Prueba SOLO 333",
-  "nav_elevator": "Ascensor"
+  "nav_elevator": "Ascensor",
+  "nav_garden": "Jardinería y riego"
 };

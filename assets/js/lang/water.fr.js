@@ -81,5 +81,6 @@ window.translations.water = {
   "water_boiler_reset_lbl": "Réinitialisation du disjoncteur thermique :",
   "water_boiler_reset_text": "Si votre chaudière ne chauffe pas une fois le courant rétabli, mais ne présente aucune fuite visible, ne remplacez pas l&#x27;appareil. Dans la plupart des cas, c&#x27;est le disjoncteur thermique interne qui s&#x27;est déclenché. Un bouton rouge de réinitialisation manuelle se trouve derrière le capot inférieur.",
   "water_boiler_danger_lbl": "Risque électrique 230 V :",
-  "water_boiler_danger_text": "Le bouton de réinitialisation thermique se trouve à proximité immédiate de bornes électriques sous tension. Ne retirez jamais le capot de protection vous-même. Contactez notre plombier local agréé via WhatsApp au +34 666 70 19 80."
+  "water_boiler_danger_text": "Le bouton de réinitialisation thermique se trouve à proximité immédiate de bornes électriques sous tension. Ne retirez jamais le capot de protection vous-même. Contactez notre plombier local agréé via WhatsApp au +34 666 70 19 80.",
+  "nav_garden": "Jardin et arrosage"
 };
