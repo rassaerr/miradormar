@@ -25,5 +25,7 @@ window.translations.index = {
   "nav_water": "Water",
   "title": "Mirador del Mar – Palomares",
   "welcome_sub": "Kies hieronder een rubriek om informatie en documenten te bekijken.",
-  "welcome_title": "Informatieportaal voor gebouwen"
+  "welcome_title": "Informatieportaal voor gebouwen",
+  "nav_elevator": "Lift",
+  "card_elevator_desc": "Liftveiligheid, noodintercom, technische specificaties van Otis en deursensoren."
 };

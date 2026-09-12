@@ -25,5 +25,7 @@ window.translations.index = {
   "nav_water": "Agua",
   "title": "Mirador del Mar – Palomares",
   "welcome_sub": "Selecciona una de las secciones siguientes para acceder a la información y a los documentos.",
-  "welcome_title": "Portal de información sobre edificios"
+  "welcome_title": "Portal de información sobre edificios",
+  "nav_elevator": "Ascensor",
+  "card_elevator_desc": "Seguridad de los ascensores, intercomunicador de emergencia, especificaciones de Otis y sensores de puertas."
 };

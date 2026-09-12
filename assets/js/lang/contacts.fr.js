@@ -24,5 +24,6 @@ window.translations.contacts = {
   "nav_maintenance": "Maintenance",
   "nav_water": "Eau",
   "title": "Mirador del Mar – Palomares",
-  "keys_manager_contact_test": "Test UNIQUEMENT 333"
+  "keys_manager_contact_test": "Test UNIQUEMENT 333",
+  "nav_elevator": "Ascenseur"
 };

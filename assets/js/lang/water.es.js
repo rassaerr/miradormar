@@ -58,5 +58,6 @@ window.translations.water = {
   "water_step_outside": "No intente accionar las válvulas internas. Comunique inmediatamente el incidente a la línea de emergencias de Galasa, llamando al +34 950 39 12 00, y avise a la administración del edificio.",
   "water_text": "Información sobre el suministro de agua, las válvulas principales, los contadores y los procedimientos de emergencia.",
   "water_title": "Agua",
-  "water_valve": "Válvula de cierre principal (azul): en la parte inferior izquierda, dentro del armario de agua"
+  "water_valve": "Válvula de cierre principal (azul): en la parte inferior izquierda, dentro del armario de agua",
+  "nav_elevator": "Ascensor"
 };

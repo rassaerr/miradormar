@@ -58,5 +58,6 @@ window.translations.water = {
   "water_step_outside": "N&#x27;essayez pas d&#x27;actionner les vannes internes. Signalez immédiatement l&#x27;incident à la ligne d&#x27;urgence de Galasa au +34 950 39 12 00 et prévenez la direction de l&#x27;immeuble.",
   "water_text": "Informations concernant l&#x27;alimentation en eau, les vannes principales, les compteurs et les procédures d&#x27;urgence.",
   "water_title": "Eau",
-  "water_valve": "Robinet d&#x27;arrêt principal (bleu) : en bas à gauche, à l&#x27;intérieur du placard à eau"
+  "water_valve": "Robinet d&#x27;arrêt principal (bleu) : en bas à gauche, à l&#x27;intérieur du placard à eau",
+  "nav_elevator": "Ascenseur"
 };

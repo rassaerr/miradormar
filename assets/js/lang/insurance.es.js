@@ -15,5 +15,6 @@ window.translations.insurance = {
   "nav_keys": "Claves técnicas de la sala",
   "nav_maintenance": "Mantenimiento",
   "nav_water": "Agua",
-  "title": "Mirador del Mar – Palomares"
+  "title": "Mirador del Mar – Palomares",
+  "nav_elevator": "Ascensor"
 };

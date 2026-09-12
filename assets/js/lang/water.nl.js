@@ -58,5 +58,6 @@ window.translations.water = {
   "water_step_outside": "Probeer de interne kleppen niet te bedienen. Meld het incident onmiddellijk aan de Galasa-noodlijn op +34 950 39 12 00 en breng het gebouwbeheer op de hoogte.",
   "water_text": "Informatie over de watervoorziening, hoofdafsluiters, meters en noodprocedures.",
   "water_title": "Water",
-  "water_valve": "Hoofdafsluitklep (blauw): linksonder in de waterkast"
+  "water_valve": "Hoofdafsluitklep (blauw): linksonder in de waterkast",
+  "nav_elevator": "Lift"
 };

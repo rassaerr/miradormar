@@ -19,5 +19,6 @@ window.translations.maintenance = {
   "nav_keys": "Clés techniques des salles",
   "nav_maintenance": "Maintenance",
   "nav_water": "Eau",
-  "title": "Mirador del Mar – Palomares"
+  "title": "Mirador del Mar – Palomares",
+  "nav_elevator": "Ascenseur"
 };

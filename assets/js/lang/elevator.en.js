@@ -14,7 +14,6 @@ window.translations.elevator = {
   "nav_maintenance": "Maintenance",
   "nav_contacts": "Contacts",
   "nav_about": "About",
-  "card_elevator_desc": "Elevator safety, emergency intercom, Otis specs, and door sensors.",
   "elevator_title": "Elevator Usage & Safety (Otis, 2007)",
   "elevator_intro": "This building is equipped with an Otis elevator from 2007, which over the years has been fitted with several modern upgrades, including a digital information screen. In this chapter, we discuss the most important safety features, what you should do in case of an emergency, and how the door sensors work in detail.",
   "elevator_sec1_title": "1. What to Do in Case of Emergency (Elevator Blockage)?",

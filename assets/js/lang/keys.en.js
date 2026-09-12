@@ -6,6 +6,7 @@ window.translations.keys = {
   "nav_insurance": "Insurance",
   "nav_documents": "Documents",
   "nav_keys": "Keys & Access",
+  "nav_elevator": "Elevator",
   "nav_garage": "Garage & Gate",
   "nav_electricity": "Electricity",
   "nav_water": "Water",

@@ -7,6 +7,7 @@ window.translations.electricity = {
   "nav_documents": "Documents",
   "nav_keys": "Technical Room Keys",
   "nav_garage": "Garage & Gate",
+  "nav_elevator": "Elevator",
   "nav_electricity": "Electricity",
   "nav_water": "Water",
   "nav_internet": "Internet",
