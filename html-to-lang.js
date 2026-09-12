@@ -12,7 +12,6 @@ if (!fs.existsSync(langDir)) {
 
 const htmlFiles = fs.readdirSync(rootDir).filter(file => file.endsWith('.html'));
 
-// Functie om HTML-entiteiten netjes te decoderen naar leesbare teksten (&amp; -> &, &quot; -> ", etc.)
 function decodeHtmlEntities(text) {
   return text
     .replace(/&amp;/g, '&')
@@ -21,6 +20,37 @@ function decodeHtmlEntities(text) {
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'")
     .replace(/&nbsp;/g, ' ');
+}
+
+/**
+ * Strips all HTML tags EXCEPT <a> anchor tags (preserving href, target, etc.)
+ */
+function preserveOnlyLinks(html) {
+  // 1. Temporarily protect <a> tags by replacing them with a unique placeholder, 
+  //    or process them carefully. A common approach is matching <a> tags specifically.
+  
+  // We can match any <a>...</a> tag block
+  const linkRegex = /(<a\b[^>]*>[\s\S]*?<\/a>)/gi;
+  const links = [];
+  
+  // Extract and replace links with placeholders like __LINK_0__, __LINK_1__, etc.
+  const maskedHtml = html.replace(linkRegex, (match) => {
+    links.push(match);
+    return `__LINK_${links.length - 1}__`;
+  });
+
+  // 2. Strip all other remaining HTML tags (like <strong>, <em>, etc.)
+  let cleanText = maskedHtml.replace(/<[^>]*>/g, '');
+
+  // 3. Decode standard entities on the clean text
+  cleanText = decodeHtmlEntities(cleanText);
+
+  // 4. Put the original <a> tags back into their places
+  links.forEach((link, index) => {
+    cleanText = cleanText.replace(`__LINK_${index}__`, link);
+  });
+
+  return cleanText.trim();
 }
 
 for (const htmlFile of htmlFiles) {
@@ -42,10 +72,12 @@ for (const htmlFile of htmlFiles) {
   while ((match = tagRegex.exec(htmlContent)) !== null) {
     const key = match[2];
     const innerHtml = match[4];
-    // Strip HTML tags en decodeer entiteiten voor professionele output
-    const cleanText = decodeHtmlEntities(innerHtml.replace(/<[^>]*>/g, '').trim());
+    
+    // Behoud ALLEEN links, strip alle andere tags zoals <strong> of <em>
+    const processedText = preserveOnlyLinks(innerHtml);
+    
     if (key) {
-      pageKeys[key] = cleanText || key;
+      pageKeys[key] = processedText || key;
     }
   }
 
@@ -67,15 +99,12 @@ for (const htmlFile of htmlFiles) {
       if (jsonMatch) {
         existingData = JSON.parse(jsonMatch[1]);
       }
-    } catch (e) {
-      // Stilzwijgen bij parse fout
-    }
+    } catch (e) {}
   }
 
   const finalData = {};
   for (const [key, defaultText] of Object.entries(pageKeys)) {
     if (targetLang === 'en') {
-      // De HTML is heilig voor Engels. Overschrijf ALTIJD met de actuele HTML tekst.
       finalData[key] = defaultText !== '' ? defaultText : key;
     } else {
       if (existingData[key] !== undefined && existingData[key] !== '' && !/^\[[A-Z]{2}\]/.test(existingData[key])) {
@@ -88,7 +117,6 @@ for (const htmlFile of htmlFiles) {
 
   const fileContent = `window.translations = window.translations || {};\nwindow.translations.${baseName} = ${JSON.stringify(finalData, null, 2)};\n`;
   
-  // ALLES-IN-ÉÉN FIX: Schrijf het bestand alleen weg als het echt anders is dan wat er al stond!
   let existingFileContent = '';
   if (fs.existsSync(langFilePath)) {
     existingFileContent = fs.readFileSync(langFilePath, 'utf8');
@@ -106,4 +134,4 @@ for (const htmlFile of htmlFiles) {
   }
 }
 
-console.log(`[DEBUG] Klaar! Alle HTML-entiteiten in '${targetLang}' zijn schoongemaakt.`);
+console.log(`[DEBUG] Klaar! Alleen links zijn behouden; overige HTML-tags zijn gestript voor '${targetLang}'.`);

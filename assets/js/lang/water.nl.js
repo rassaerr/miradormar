@@ -52,7 +52,7 @@ window.translations.water = {
   "water_plumber_section_title": "Lokale hulp bij loodgieterswerk",
   "water_pressure": "Druksysteem: bevindt zich naast het instrumentenpaneel",
   "water_provider_title": "1. Nutsbedrijven en contactpersonen voor noodgevallen",
-  "water_shutdown_intro": "Vanwege de verouderde infrastructuur in Palomares komen er regelmatig tijdelijke onderbrekingen in de watervoorziening voor (die tussen de 1 en 12 uur duren). Bekijk de actuele mededelingen op www.galasa.es/interrupciones-suministro.",
+  "water_shutdown_intro": "Vanwege de verouderde infrastructuur in Palomares doen zich regelmatig tijdelijke onderbrekingen in de watervoorziening voor (die tussen de 1 en 12 uur duren). Bekijk de actuele mededelingen op <a href=\"https://www.galasa.es/interrupciones-suministro\" target=\"_blank\" class=\"notranslate\">www.galasa.es/interrupciones-suministro</a>.",
   "water_shutdown_title": "4. Hoofdwaterafsluitingen en ketelbeveiliging",
   "water_specs_title": "2. Specificaties van de infrastructuur en metingen",
   "water_step_outside": "Probeer de interne kleppen niet te bedienen. Meld het incident onmiddellijk aan de Galasa-noodlijn op +34 950 39 12 00 en breng het gebouwbeheer op de hoogte.",
@@ -81,6 +81,6 @@ window.translations.water = {
   "water_boiler_reset_lbl": "Resetten van de thermische beveiliging:",
   "water_boiler_reset_text": "Als uw ketel na het herstel van de stroomtoevoer geen warmte meer produceert, maar er geen zichtbare lekken zijn, vervang het apparaat dan niet. In de meeste gevallen is de interne thermische veiligheidsschakelaar in werking getreden. Achter de onderste afdekplaat bevindt zich een rode knop waarmee u de schakelaar handmatig kunt resetten.",
   "water_boiler_danger_lbl": "Gevaar door 230 V-stroom:",
-  "water_boiler_danger_text": "De thermische resetknop bevindt zich vlak naast stroomvoerende aansluitingen. Verwijder de beschermkap nooit zelf. Neem via WhatsApp contact op met onze gecertificeerde lokale loodgieter op +34 666 70 19 80.",
+  "water_boiler_danger_text": "De thermische resetknop bevindt zich vlak naast stroomvoerende aansluitingen. Verwijder de beschermkap nooit zelf. Neem via WhatsApp contact op met onze gecertificeerde lokale loodgieter via <a href=\"https://wa.me/34666701980\" target=\"_blank\" class=\"notranslate\">+34 666 70 19 80</a>.",
   "nav_garden": "Tuin &amp; Irrigatie"
 };

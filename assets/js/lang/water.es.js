@@ -52,7 +52,7 @@ window.translations.water = {
   "water_plumber_section_title": "Asistencia local en fontanería",
   "water_pressure": "Sistema de presión: situado junto al cuadro de instrumentos",
   "water_provider_title": "1. Proveedores de servicios públicos y contactos de emergencia",
-  "water_shutdown_intro": "Debido al deterioro de las infraestructuras de Palomares, se producen periódicamente cortes temporales en el suministro de agua (con una duración de entre 1 y 12 horas). Consulte los avisos vigentes en www.galasa.es/interrupciones-suministro.",
+  "water_shutdown_intro": "Debido al deterioro de las infraestructuras de Palomares, se producen periódicamente cortes temporales en el suministro de agua (con una duración de entre 1 y 12 horas). Consulte los avisos vigentes en <a href=\"https://www.galasa.es/interrupciones-suministro\" target=\"_blank\" class=\"notranslate\">www.galasa.es/interrupciones-suministro</a>.",
   "water_shutdown_title": "4. Cortes generales de agua y protección de la caldera",
   "water_specs_title": "2. Especificaciones de infraestructura y medición",
   "water_step_outside": "No intente accionar las válvulas internas. Comunique inmediatamente el incidente a la línea de emergencias de Galasa, llamando al +34 950 39 12 00, y avise a la administración del edificio.",
@@ -81,6 +81,6 @@ window.translations.water = {
   "water_boiler_reset_lbl": "Reinicio del interruptor térmico:",
   "water_boiler_reset_text": "Si la caldera no calienta una vez restablecido el suministro, pero no presenta fugas visibles, no sustituya la unidad. En la mayoría de los casos, se ha activado el interruptor térmico de seguridad interno. Detrás de la placa de cubierta inferior hay un botón rojo de reinicio manual.",
   "water_boiler_danger_lbl": "Riesgo eléctrico de 230 V:",
-  "water_boiler_danger_text": "El botón de reinicio térmico se encuentra junto a unos terminales eléctricos bajo tensión. No retires nunca la cubierta protectora por tu cuenta. Ponte en contacto con nuestro fontanero local certificado a través de WhatsApp en el +34 666 70 19 80.",
+  "water_boiler_danger_text": "El botón de reinicio térmico se encuentra junto a unos terminales eléctricos bajo tensión. No retires nunca la cubierta protectora por tu cuenta. Ponte en contacto con nuestro fontanero local certificado a través de WhatsApp en el número <a href=\"https://wa.me/34666701980\" target=\"_blank\" class=\"notranslate\">+34 666 70 19 80</a>.",
   "nav_garden": "Jardinería y riego"
 };

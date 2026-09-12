@@ -52,7 +52,7 @@ window.translations.water = {
   "water_plumber_section_title": "Assistance locale en plomberie",
   "water_pressure": "Système de pression : situé à côté du tableau de bord",
   "water_provider_title": "1. Fournisseurs de services publics et contacts en cas d&#x27;urgence",
-  "water_shutdown_intro": "En raison du vieillissement des infrastructures à Palomares, des coupures temporaires d&#x27;eau surviennent périodiquement (d&#x27;une durée comprise entre 1 et 12 heures). Consultez les avis en cours sur www.galasa.es/interrupciones-suministro.",
+  "water_shutdown_intro": "En raison du vieillissement des infrastructures à Palomares, des coupures temporaires d&#x27;eau surviennent périodiquement (d&#x27;une durée comprise entre 1 et 12 heures). Consultez les avis en cours sur <a href=\"https://www.galasa.es/interrupciones-suministro\" target=\"_blank\" class=\"notranslate\">www.galasa.es/interrupciones-suministro</a>.",
   "water_shutdown_title": "4. Coupures d&#x27;eau principales et protection des chaudières",
   "water_specs_title": "2. Spécifications techniques des infrastructures et comptage",
   "water_step_outside": "N&#x27;essayez pas d&#x27;actionner les vannes internes. Signalez immédiatement l&#x27;incident à la ligne d&#x27;urgence de Galasa au +34 950 39 12 00 et prévenez la direction de l&#x27;immeuble.",
@@ -81,6 +81,6 @@ window.translations.water = {
   "water_boiler_reset_lbl": "Réinitialisation du disjoncteur thermique :",
   "water_boiler_reset_text": "Si votre chaudière ne chauffe pas une fois le courant rétabli, mais ne présente aucune fuite visible, ne remplacez pas l&#x27;appareil. Dans la plupart des cas, c&#x27;est le disjoncteur thermique interne qui s&#x27;est déclenché. Un bouton rouge de réinitialisation manuelle se trouve derrière le capot inférieur.",
   "water_boiler_danger_lbl": "Risque électrique 230 V :",
-  "water_boiler_danger_text": "Le bouton de réinitialisation thermique se trouve à proximité immédiate de bornes électriques sous tension. Ne retirez jamais le capot de protection vous-même. Contactez notre plombier local agréé via WhatsApp au +34 666 70 19 80.",
+  "water_boiler_danger_text": "Le bouton de réinitialisation thermique se trouve à proximité de bornes électriques sous tension. Ne retirez jamais le capot de protection vous-même. Contactez notre plombier local agréé via WhatsApp à l&#x27;adresse <a href=\"https://wa.me/34666701980\" target=\"_blank\" class=\"notranslate\">+34 666 70 19 80</a>.",
   "nav_garden": "Jardin et arrosage"
 };
